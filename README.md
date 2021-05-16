@@ -1,5 +1,9 @@
 # Ogham Data - v1.0
 
+<center>
+<img src="https://github.com/ogi-ogham/ogham-datav1/raw/main/img/FellowLogo.png" height="100">
+</center>
+
 ## Introduction
 
 This repository contains `Ogham Data` of several data sources such as
