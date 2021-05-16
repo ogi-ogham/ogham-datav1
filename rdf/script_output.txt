@@ -1,0 +1,650 @@
+
+
+Python - _run_py3.py:61
+start _run_py3.py...
+removed all ttl files...
+*****************************************
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 231 entries, 0 to 230
+Data columns (total 8 columns):
+ #   Column          Non-Null Count  Dtype
+---  ------          --------------  -----
+ 0   id              231 non-null    int64
+ 1   label           231 non-null    object
+ 2   wkt             229 non-null    object
+ 3   wikidata_id     231 non-null    object
+ 4   townland_label  229 non-null    object
+ 5   barony_label    229 non-null    object
+ 6   county_label    231 non-null    object
+ 7   province_label  231 non-null    object
+dtypes: int64(1), object(7)
+memory usage: 14.6+ KB
+None
+0
+triples 6699 files 1
+ > og_sites_1.ttl
+*****************************************
+SUCCESS: closing script
+*****************************************
+*****************************************
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 1037 entries, 0 to 1036
+Data columns (total 3 columns):
+ #   Column      Non-Null Count  Dtype
+---  ------      --------------  -----
+ 0   id          1037 non-null   int64
+ 1   insc_no     1037 non-null   int64
+ 2   reading_no  1037 non-null   int64
+dtypes: int64(3)
+memory usage: 24.4 KB
+None
+0
+1000
+triples 13481 files 1
+ > og_inscriptions_1.ttl
+*****************************************
+SUCCESS: closing script
+*****************************************
+*****************************************
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 595 entries, 0 to 594
+Data columns (total 8 columns):
+ #   Column             Non-Null Count  Dtype
+---  ------             --------------  -----
+ 0   id                 595 non-null    int64
+ 1   type               595 non-null    object
+ 2   wkt                582 non-null    object
+ 3   geom_orig          2 non-null      object
+ 4   geom_lastrecorded  68 non-null     object
+ 5   sitetype           144 non-null    object
+ 6   site               222 non-null    object
+ 7   grid               209 non-null    object
+dtypes: int64(1), object(7)
+memory usage: 37.3+ KB
+None
+0
+triples 15813 files 1
+ > og_locations_1.ttl
+*****************************************
+SUCCESS: closing script
+*****************************************
+*****************************************
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 538 entries, 0 to 537
+Data columns (total 3 columns):
+ #   Column     Non-Null Count  Dtype
+---  ------     --------------  -----
+ 0   id         538 non-null    int64
+ 1   label      538 non-null    object
+ 2   name_caps  538 non-null    object
+dtypes: int64(1), object(2)
+memory usage: 12.7+ KB
+None
+0
+triples 13450 files 1
+ > og_persons_1.ttl
+*****************************************
+SUCCESS: closing script
+*****************************************
+*****************************************
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 998 entries, 0 to 997
+Data columns (total 6 columns):
+ #   Column          Non-Null Count  Dtype
+---  ------          --------------  -----
+ 0   id              998 non-null    int64
+ 1   label           998 non-null    object
+ 2   language        998 non-null    object
+ 3   script          998 non-null    object
+ 4   scientist       998 non-null    object
+ 5   scientist_year  998 non-null    object
+dtypes: int64(1), object(5)
+memory usage: 46.9+ KB
+None
+0
+triples 24950 files 1
+ > og_readings_1.ttl
+*****************************************
+SUCCESS: closing script
+*****************************************
+*****************************************
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 1237 entries, 0 to 1236
+Data columns (total 21 columns):
+ #   Column             Non-Null Count  Dtype
+---  ------             --------------  -----
+ 0   id                 1237 non-null   int64
+ 1   label              1237 non-null   object
+ 2   desc               1237 non-null   object
+ 3   wikidata_id        1237 non-null   object
+ 4   original_id        1237 non-null   object
+ 5   width              443 non-null    float64
+ 6   height             461 non-null    float64
+ 7   depth              155 non-null    float64
+ 8   thickness          268 non-null    float64
+ 9   h_status           326 non-null    object
+ 10  w_status           321 non-null    object
+ 11  t_status           320 non-null    object
+ 12  discovery_year     352 non-null    float64
+ 13  discovery_who      362 non-null    object
+ 14  currentsetting     361 non-null    object
+ 15  currentlocation    361 non-null    object
+ 16  form               361 non-null    object
+ 17  completeness       343 non-null    object
+ 18  preservation       337 non-null    object
+ 19  preservation_note  147 non-null    object
+ 20  smr_no             162 non-null    object
+dtypes: float64(5), int64(1), object(15)
+memory usage: 203.1+ KB
+None
+0
+1000
+triples 34768 files 1
+ > og_stones_1.ttl
+*****************************************
+SUCCESS: closing script
+*****************************************
+*****************************************
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 104 entries, 0 to 103
+Data columns (total 8 columns):
+ #   Column         Non-Null Count  Dtype
+---  ------         --------------  -----
+ 0   id             104 non-null    int64
+ 1   label          104 non-null    object
+ 2   translation    104 non-null    object
+ 3   reference      104 non-null    object
+ 4   variants       104 non-null    object
+ 5   context        104 non-null    object
+ 6   wikidata_id    104 non-null    object
+ 7   wikidata_type  104 non-null    object
+dtypes: int64(1), object(7)
+memory usage: 6.6+ KB
+None
+0
+triples 2861 files 1
+ > og_words_1.ttl
+*****************************************
+SUCCESS: closing script
+*****************************************
+*****************************************
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 343 entries, 0 to 342
+Data columns (total 5 columns):
+ #   Column       Non-Null Count  Dtype
+---  ------       --------------  -----
+ 0   id           343 non-null    int64
+ 1   label        342 non-null    object
+ 2   label_ga     282 non-null    object
+ 3   wkt          343 non-null    object
+ 4   wikidata_id  342 non-null    object
+dtypes: int64(1), object(4)
+memory usage: 13.5+ KB
+None
+0
+triples 8857 files 1
+ > gs_baronies_1.ttl
+*****************************************
+SUCCESS: closing script
+*****************************************
+*****************************************
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 37 entries, 0 to 36
+Data columns (total 4 columns):
+ #   Column       Non-Null Count  Dtype
+---  ------       --------------  -----
+ 0   id           37 non-null     int64
+ 1   label        37 non-null     object
+ 2   wkt          37 non-null     object
+ 3   wikidata_id  37 non-null     object
+dtypes: int64(1), object(3)
+memory usage: 1.3+ KB
+None
+0
+triples 962 files 1
+ > gs_counties_1.ttl
+*****************************************
+SUCCESS: closing script
+*****************************************
+*****************************************
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 2 entries, 0 to 1
+Data columns (total 4 columns):
+ #   Column       Non-Null Count  Dtype
+---  ------       --------------  -----
+ 0   id           2 non-null      int64
+ 1   label        2 non-null      object
+ 2   wkt          2 non-null      object
+ 3   wikidata_id  2 non-null      object
+dtypes: int64(1), object(3)
+memory usage: 192.0+ bytes
+None
+0
+triples 50 files 1
+ > gs_countries_1.ttl
+*****************************************
+SUCCESS: closing script
+*****************************************
+*****************************************
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 1 entries, 0 to 0
+Data columns (total 4 columns):
+ #   Column       Non-Null Count  Dtype
+---  ------       --------------  -----
+ 0   id           1 non-null      int64
+ 1   label        1 non-null      object
+ 2   wkt          1 non-null      object
+ 3   wikidata_id  1 non-null      object
+dtypes: int64(1), object(3)
+memory usage: 160.0+ bytes
+None
+0
+triples 25 files 1
+ > gs_ireland_island_1.ttl
+*****************************************
+SUCCESS: closing script
+*****************************************
+*****************************************
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 4 entries, 0 to 3
+Data columns (total 4 columns):
+ #   Column       Non-Null Count  Dtype
+---  ------       --------------  -----
+ 0   id           4 non-null      int64
+ 1   label        4 non-null      object
+ 2   wkt          4 non-null      object
+ 3   wikidata_id  4 non-null      object
+dtypes: int64(1), object(3)
+memory usage: 256.0+ bytes
+None
+0
+triples 100 files 1
+ > gs_provinces_1.ttl
+*****************************************
+SUCCESS: closing script
+*****************************************
+*****************************************
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 59559 entries, 0 to 59558
+Data columns (total 7 columns):
+ #   Column      Non-Null Count  Dtype
+---  ------      --------------  -----
+ 0   id          59559 non-null  int64
+ 1   label       59559 non-null  object
+ 2   label_ga    41655 non-null  object
+ 3   wkt         59559 non-null  object
+ 4   osm_id      58854 non-null  float64
+ 5   logainm_id  50006 non-null  float64
+ 6   tie_url     58854 non-null  object
+dtypes: float64(2), int64(1), object(4)
+memory usage: 3.2+ MB
+None
+0
+1000
+2000
+3000
+4000
+5000
+6000
+7000
+8000
+9000
+10000
+11000
+12000
+13000
+14000
+15000
+16000
+17000
+18000
+19000
+20000
+21000
+22000
+23000
+24000
+25000
+26000
+27000
+28000
+29000
+30000
+31000
+32000
+33000
+34000
+35000
+36000
+37000
+38000
+39000
+40000
+41000
+42000
+43000
+44000
+45000
+46000
+47000
+48000
+49000
+50000
+51000
+52000
+53000
+54000
+55000
+56000
+57000
+58000
+59000
+triples 1727211 files 18
+ > gs_townlands_centroidpoint_1.ttl
+ > gs_townlands_centroidpoint_2.ttl
+ > gs_townlands_centroidpoint_3.ttl
+ > gs_townlands_centroidpoint_4.ttl
+ > gs_townlands_centroidpoint_5.ttl
+ > gs_townlands_centroidpoint_6.ttl
+ > gs_townlands_centroidpoint_7.ttl
+ > gs_townlands_centroidpoint_8.ttl
+ > gs_townlands_centroidpoint_9.ttl
+ > gs_townlands_centroidpoint_10.ttl
+ > gs_townlands_centroidpoint_11.ttl
+ > gs_townlands_centroidpoint_12.ttl
+ > gs_townlands_centroidpoint_13.ttl
+ > gs_townlands_centroidpoint_14.ttl
+ > gs_townlands_centroidpoint_15.ttl
+ > gs_townlands_centroidpoint_16.ttl
+ > gs_townlands_centroidpoint_17.ttl
+ > gs_townlands_centroidpoint_18.ttl
+*****************************************
+SUCCESS: closing script
+*****************************************
+*****************************************
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 59535 entries, 0 to 59534
+Data columns (total 2 columns):
+ #   Column       Non-Null Count  Dtype
+---  ------       --------------  -----
+ 0   id_townland  59535 non-null  int64
+ 1   id_barony    59535 non-null  int64
+dtypes: int64(2)
+memory usage: 930.4 KB
+None
+triples 59535 files 1
+ > ct_barony_townland_1.ttl
+*****************************************
+SUCCESS: closing script
+*****************************************
+*****************************************
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 37 entries, 0 to 36
+Data columns (total 2 columns):
+ #   Column       Non-Null Count  Dtype
+---  ------       --------------  -----
+ 0   id_county    37 non-null     int64
+ 1   id_province  37 non-null     int64
+dtypes: int64(2)
+memory usage: 720.0 bytes
+None
+triples 37 files 1
+ > ct_province_county_1.ttl
+*****************************************
+SUCCESS: closing script
+*****************************************
+*****************************************
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 343 entries, 0 to 342
+Data columns (total 2 columns):
+ #   Column     Non-Null Count  Dtype
+---  ------     --------------  -----
+ 0   id_barony  343 non-null    int64
+ 1   id_county  343 non-null    int64
+dtypes: int64(2)
+memory usage: 5.5 KB
+None
+triples 343 files 1
+ > ct_county_barony_1.ttl
+*****************************************
+SUCCESS: closing script
+*****************************************
+*****************************************
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 998 entries, 0 to 997
+Data columns (total 2 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   id_insc  998 non-null    int64
+ 1   id_read  998 non-null    int64
+dtypes: int64(2)
+memory usage: 15.7 KB
+None
+triples 998 files 1
+ > ct_insc_read_1.ttl
+*****************************************
+SUCCESS: closing script
+*****************************************
+*****************************************
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 228 entries, 0 to 227
+Data columns (total 2 columns):
+ #   Column     Non-Null Count  Dtype
+---  ------     --------------  -----
+ 0   id_site    228 non-null    int64
+ 1   id_barony  228 non-null    int64
+dtypes: int64(2)
+memory usage: 3.7 KB
+None
+triples 228 files 1
+ > ct_site_barony_1.ttl
+*****************************************
+SUCCESS: closing script
+*****************************************
+*****************************************
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 229 entries, 0 to 228
+Data columns (total 2 columns):
+ #   Column      Non-Null Count  Dtype
+---  ------      --------------  -----
+ 0   id_site     229 non-null    int64
+ 1   id_country  229 non-null    int64
+dtypes: int64(2)
+memory usage: 3.7 KB
+None
+triples 229 files 1
+ > ct_site_country_1.ttl
+*****************************************
+SUCCESS: closing script
+*****************************************
+*****************************************
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 229 entries, 0 to 228
+Data columns (total 2 columns):
+ #   Column     Non-Null Count  Dtype
+---  ------     --------------  -----
+ 0   id_site    229 non-null    int64
+ 1   id_county  229 non-null    int64
+dtypes: int64(2)
+memory usage: 3.7 KB
+None
+triples 229 files 1
+ > ct_site_county_1.ttl
+*****************************************
+SUCCESS: closing script
+*****************************************
+*****************************************
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 595 entries, 0 to 594
+Data columns (total 2 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   id_site  595 non-null    int64
+ 1   id_loc   595 non-null    int64
+dtypes: int64(2)
+memory usage: 9.4 KB
+None
+triples 595 files 1
+ > ct_site_loc_1.ttl
+*****************************************
+SUCCESS: closing script
+*****************************************
+*****************************************
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 229 entries, 0 to 228
+Data columns (total 2 columns):
+ #   Column       Non-Null Count  Dtype
+---  ------       --------------  -----
+ 0   id_site      229 non-null    int64
+ 1   id_province  229 non-null    int64
+dtypes: int64(2)
+memory usage: 3.7 KB
+None
+triples 229 files 1
+ > ct_site_province_1.ttl
+*****************************************
+SUCCESS: closing script
+*****************************************
+*****************************************
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 229 entries, 0 to 228
+Data columns (total 2 columns):
+ #   Column       Non-Null Count  Dtype
+---  ------       --------------  -----
+ 0   id_site      229 non-null    int64
+ 1   id_townland  229 non-null    int64
+dtypes: int64(2)
+memory usage: 3.7 KB
+None
+triples 229 files 1
+ > ct_site_townland_1.ttl
+*****************************************
+SUCCESS: closing script
+*****************************************
+*****************************************
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 1037 entries, 0 to 1036
+Data columns (total 2 columns):
+ #   Column    Non-Null Count  Dtype
+---  ------    --------------  -----
+ 0   id_stone  1037 non-null   int64
+ 1   id_insc   1037 non-null   int64
+dtypes: int64(2)
+memory usage: 16.3 KB
+None
+triples 1037 files 1
+ > ct_stone_insc_1.ttl
+*****************************************
+SUCCESS: closing script
+*****************************************
+*****************************************
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 743 entries, 0 to 742
+Data columns (total 2 columns):
+ #   Column     Non-Null Count  Dtype
+---  ------     --------------  -----
+ 0   id_stone   743 non-null    int64
+ 1   id_person  743 non-null    int64
+dtypes: int64(2)
+memory usage: 11.7 KB
+None
+triples 743 files 1
+ > ct_stone_person_1.ttl
+*****************************************
+SUCCESS: closing script
+*****************************************
+*****************************************
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 1235 entries, 0 to 1234
+Data columns (total 2 columns):
+ #   Column    Non-Null Count  Dtype
+---  ------    --------------  -----
+ 0   id_stone  1235 non-null   int64
+ 1   id_site   1235 non-null   int64
+dtypes: int64(2)
+memory usage: 19.4 KB
+None
+triples 1235 files 1
+ > ct_stone_site_1.ttl
+*****************************************
+SUCCESS: closing script
+*****************************************
+*****************************************
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 853 entries, 0 to 852
+Data columns (total 2 columns):
+ #   Column       Non-Null Count  Dtype
+---  ------       --------------  -----
+ 0   id_stone     853 non-null    int64
+ 1   id_squirrel  853 non-null    int64
+dtypes: int64(2)
+memory usage: 13.5 KB
+None
+triples 853 files 1
+ > ct_stone_squirrel_1.ttl
+*****************************************
+SUCCESS: closing script
+*****************************************
+*****************************************
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 1628 entries, 0 to 1627
+Data columns (total 2 columns):
+ #   Column    Non-Null Count  Dtype
+---  ------    --------------  -----
+ 0   id_stone  1628 non-null   int64
+ 1   id_word   1628 non-null   int64
+dtypes: int64(2)
+memory usage: 25.6 KB
+None
+triples 1628 files 1
+ > ct_stone_word_1.ttl
+*****************************************
+SUCCESS: closing script
+*****************************************
+*****************************************
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 1178 entries, 0 to 1177
+Data columns (total 26 columns):
+ #   Column               Non-Null Count  Dtype
+---  ------               --------------  -----
+ 0   id                   1178 non-null   int64
+ 1   original_id          1178 non-null   object
+ 2   stone_type           1178 non-null   object
+ 3   cisp_id              1165 non-null   object
+ 4   o3d                  595 non-null    object
+ 5   macalister_1945      1117 non-null   object
+ 6   macalister_1907      100 non-null    float64
+ 7   mcmanus_1991         15 non-null     object
+ 8   macalister_1902      10 non-null     float64
+ 9   macalister_1897      107 non-null    float64
+ 10  cuppage_1986         79 non-null     object
+ 11  macalister_1949      6 non-null      float64
+ 12  brash_1879           6 non-null      float64
+ 13  osullivan_1996       73 non-null     float64
+ 14  power_1992           27 non-null     float64
+ 15  macalister_1909      1 non-null      float64
+ 16  petrie_1872          4 non-null      float64
+ 17  brikil_1993          1 non-null      float64
+ 18  raftery_1960         1 non-null      float64
+ 19  okasha_forsyth_2001  9 non-null      object
+ 20  ferguson_1887        4 non-null      float64
+ 21  power_1997           33 non-null     float64
+ 22  g_id                 1178 non-null   int64
+ 23  ciic_stone           1115 non-null   float64
+ 24  cisp_stone           1159 non-null   float64
+ 25  o3d_stone            595 non-null    float64
+dtypes: float64(16), int64(2), object(8)
+memory usage: 239.4+ KB
+None
+0
+1000
+triples 16014 files 1
+ > og_stones_references_1.ttl
+*****************************************
+SUCCESS: closing script
+*****************************************
+SUM TRIPLES OGHAM: 112022
+SUM TRIPLES GEODATA: 1737205
+SUM TRIPLES CROSSTABLES: 68148
+SUM TRIPLES: 1933389
+[Finished in 93.981s]

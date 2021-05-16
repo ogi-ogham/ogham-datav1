@@ -1,0 +1,98 @@
+{
+	"itemDocuments": [{
+		"subject": {
+			"type": "wbitemvariable",
+			"columnName": ""
+		},
+		"nameDescs": [{
+			"name_type": "",
+			"value": {
+				"type": "wbmonolingualexpr",
+				"language": {
+					"type": "wblanguageconstant",
+					"id": "en",
+					"label": "en"
+				},
+				"value": {
+					"type": "wbstringvariable",
+					"columnName": ""
+				}
+			}
+		}, {
+			"name_type": "DESCRIPTION_IF_NEW",
+			"value": {
+				"type": "wbmonolingualexpr",
+				"language": {
+					"type": "wblanguageconstant",
+					"id": "en",
+					"label": "en"
+				},
+				"value": {
+					"type": "wbstringvariable",
+					"columnName": "desc"
+				}
+			}
+		}],
+		"statementGroups": [{
+			"property": {
+				"type": "wbpropconstant",
+				"pid": "P31",
+				"label": "instance of",
+				"datatype": "wikibase-item"
+			},
+			"statements": [{
+				"value": {
+					"type": "wbitemconstant",
+					"qid": "Q67384733",
+					"label": "ogham word"
+				},
+				"qualifiers": [{
+					"prop": {
+						"type": "wbpropconstant",
+						"pid": "P248",
+						"label": "stated in",
+						"datatype": "wikibase-item"
+					},
+					"value": {
+						"type": "wbitemconstant",
+						"qid": "Q70310399",
+						"label": "A Guide to Ogam"
+					}
+				}],
+				"references": []
+			}]
+		}, {
+			"property": {
+				"type": "wbpropconstant",
+				"pid": "P361",
+				"label": "part of",
+				"datatype": "wikibase-item"
+			},
+			"statements": [{
+				"value": {
+					"type": "wbitemconstant",
+					"qid": "Q70873595",
+					"label": "Ogi-Ogham Project"
+				},
+				"qualifiers": [],
+				"references": []
+			}, {
+				"value": {
+					"type": "wbitemconstant",
+					"qid": "Q100530634",
+					"label": "Irish ᚑᚌᚆᚐᚋ Stones into the Wikimedia Universe"
+				},
+				"qualifiers": [],
+				"references": []
+			}, {
+				"value": {
+					"type": "wbitemconstant",
+					"qid": "Q184661",
+					"label": "Ogham"
+				},
+				"qualifiers": [],
+				"references": []
+			}]
+		}]
+	}]
+}

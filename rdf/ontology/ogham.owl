@@ -1,0 +1,2107 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://ogham.link/ontology#"
+     xml:base="http://ogham.link/ontology"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:sf="http://www.opengis.net/ont/sf#"
+     xmlns:wd="http://www.wikidata.org/entity/"
+     xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:wdt="http://www.wikidata.org/prop/direct/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:crmtex="http://www.cidoc-crm.org/cidoc-crm/crmtex/"
+     xmlns:dcmitype="http://purl.org/dc/dcmitype/"
+     xmlns:geonames="http://sws.geonames.org/"
+     xmlns:ontology="http://ontology.ogham.link/"
+     xmlns:pleiades="https://pleiades.stoa.org/places/vocab#"
+     xmlns:geosparql="http://www.opengis.net/ont/geosparql#">
+    <owl:Ontology rdf:about="http://ontology.ogham.link/">
+        <dc:contributor>Florian Thiery</dc:contributor>
+        <dc:creator>Florian Thiery</dc:creator>
+        <dc:description xml:lang="en">This ontology contains classes to describe data from Linked Ogham Data.</dc:description>
+        <dc:publisher>Florian Thiery</dc:publisher>
+        <dc:rights>CC BY 4.0</dc:rights>
+        <dc:subject>ogham</dc:subject>
+        <dc:title xml:lang="en">Ogham Ontology</dc:title>
+        <rdfs:label xml:lang="en">Ogham Ontology</rdfs:label>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+        <owl:versionInfo>16/05/2021</owl:versionInfo>
+        <skos:definition xml:lang="en">This ontology contains classes to describe data from Linked Ogham Data.</skos:definition>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontology.ogham.link/alias -->
+
+    <owl:AnnotationProperty rdf:about="http://ontology.ogham.link/alias">
+        <rdfs:label xml:lang="de">alias</rdfs:label>
+        <rdfs:label xml:lang="en">alias</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier">
+        <rdfs:comment xml:lang="en">Recommended best practice is to identify the resource by means of a string conforming to a formal identification system.</rdfs:comment>
+        <rdfs:label xml:lang="en">Identifier</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/subject -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/subject"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/type -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/type"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+        <rdfs:comment xml:lang="en">A human-readable name for the subject.</rdfs:comment>
+        <rdfs:label xml:lang="en">label</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#Resource -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://archaeology.link/ontology#disclosedAt -->
+
+    <owl:ObjectProperty rdf:about="http://archaeology.link/ontology#disclosedAt">
+        <rdfs:domain rdf:resource="http://ontology.ogham.link/OghamStone"/>
+        <rdfs:range rdf:resource="http://ontology.ogham.link/OghamSite"/>
+        <rdfs:label xml:lang="en">disclosed at</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/LogainmMatch -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.ogham.link/LogainmMatch">
+        <rdfs:subPropertyOf rdf:resource="http://ontology.ogham.link/exactMatch"/>
+        <rdfs:domain rdf:resource="https://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:range rdf:resource="https://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:label xml:lang="en">Logainm Match</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/OpenStreetMapMatch -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.ogham.link/OpenStreetMapMatch">
+        <rdfs:subPropertyOf rdf:resource="http://ontology.ogham.link/exactMatch"/>
+        <rdfs:domain rdf:resource="https://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:range rdf:resource="https://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:label xml:lang="en">Open Street Map Match</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/PlaceOfInterest -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.ogham.link/PlaceOfInterest">
+        <rdfs:subPropertyOf rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:label xml:lang="en">place of interest (POI)</rdfs:label>
+        <skos:definition xml:lang="en">c.f. https://www.ogc.org/standards/geosparql, 1.0, OGC GeoSPARQL - A Geographic Query Language for RDF Data, 11-052r4, Annex B, B.1</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/TownlandsIEMatch -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.ogham.link/TownlandsIEMatch">
+        <rdfs:subPropertyOf rdf:resource="http://ontology.ogham.link/exactMatch"/>
+        <rdfs:domain rdf:resource="https://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:range rdf:resource="https://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:label xml:lang="en">townlands.ie Match</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/carries -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.ogham.link/carries">
+        <rdfs:domain rdf:resource="http://ontology.ogham.link/OghamStone"/>
+        <rdfs:range rdf:resource="http://ontology.ogham.link/Inscription"/>
+        <rdfs:label xml:lang="en">carries</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/centroid -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.ogham.link/centroid">
+        <rdfs:subPropertyOf rdf:resource="http://ontology.ogham.link/hasPointGeometry"/>
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:label xml:lang="en">has centroid geometry</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/clusteredArea -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.ogham.link/clusteredArea">
+        <rdfs:subPropertyOf rdf:resource="http://ontology.ogham.link/hasExactGeometry"/>
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:label xml:lang="en">has clustered area</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/equals -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.ogham.link/equals">
+        <owl:equivalentProperty rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object"/>
+        <rdfs:label xml:lang="en">equals</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/exactMatch -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.ogham.link/exactMatch">
+        <rdfs:subPropertyOf rdf:resource="http://www.wikidata.org/prop/direct/P2888"/>
+        <rdfs:domain rdf:resource="https://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:range rdf:resource="https://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:label xml:lang="en">exact match</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/hasAMT -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.ogham.link/hasAMT">
+        <rdfs:domain rdf:resource="https://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:range rdf:resource="https://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:label xml:lang="en">has AMT node</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/hasCollection -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.ogham.link/hasCollection">
+        <rdfs:domain rdf:resource="http://ontology.ogham.link/OghamStone"/>
+        <rdfs:range rdf:resource="http://ontology.ogham.link/OghamStone_Squirrel"/>
+        <rdfs:label xml:lang="en">has collection</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/hasEPSG -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.ogham.link/hasEPSG">
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:range rdf:resource="https://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:label xml:lang="en">has EPSG code</rdfs:label>
+        <skos:definition xml:lang="en">a geometry in a EPSG code</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/hasExactGeometry -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.ogham.link/hasExactGeometry">
+        <rdfs:subPropertyOf rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:label xml:lang="en">hast exact geometry</rdfs:label>
+        <skos:definition xml:lang="en">c.f. https://www.ogc.org/standards/geosparql, 1.0, OGC GeoSPARQL - A Geographic Query Language for RDF Data, 11-052r4, Annex B, B.1</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/hasLocation -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.ogham.link/hasLocation">
+        <rdfs:domain rdf:resource="http://ontology.ogham.link/OghamSite"/>
+        <rdfs:range rdf:resource="http://ontology.ogham.link/GeographicLocation"/>
+        <rdfs:label xml:lang="en">has location</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/hasPointGeometry -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.ogham.link/hasPointGeometry">
+        <rdfs:subPropertyOf rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:label xml:lang="en">has point geometry</rdfs:label>
+        <skos:definition xml:lang="en">c.f. https://www.ogc.org/standards/geosparql, 1.0, OGC GeoSPARQL - A Geographic Query Language for RDF Data, 11-052r4, Annex B, B.1</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/hasType -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.ogham.link/hasType">
+        <rdfs:domain rdf:resource="https://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:range rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:label xml:lang="en">has type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/identifiedAs -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.ogham.link/identifiedAs">
+        <rdfs:domain rdf:resource="http://ontology.ogham.link/Inscription"/>
+        <rdfs:range rdf:resource="http://ontology.ogham.link/Reading"/>
+        <rdfs:label xml:lang="en">identified as</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/lastRecorded -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.ogham.link/lastRecorded">
+        <rdfs:subPropertyOf rdf:resource="http://ontology.ogham.link/hasPointGeometry"/>
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:label xml:lang="en">last recored</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/locatedAt -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.ogham.link/locatedAt">
+        <rdfs:subPropertyOf rdf:resource="http://ontology.ogham.link/hasPointGeometry"/>
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:label xml:lang="en">is located at</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/origGeom -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.ogham.link/origGeom">
+        <rdfs:subPropertyOf rdf:resource="http://ontology.ogham.link/hasPointGeometry"/>
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:label xml:lang="en">orig geometry</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/references -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.ogham.link/references">
+        <rdfs:domain rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object"/>
+        <rdfs:range rdf:resource="http://ontology.ogham.link/Book"/>
+        <rdfs:range rdf:resource="http://ontology.ogham.link/Repository"/>
+        <rdfs:label xml:lang="en">references</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/representativePoint -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.ogham.link/representativePoint">
+        <rdfs:subPropertyOf rdf:resource="http://ontology.ogham.link/hasPointGeometry"/>
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:label xml:lang="en">representative point</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/shows -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.ogham.link/shows">
+        <rdfs:domain rdf:resource="http://ontology.ogham.link/OghamStone"/>
+        <rdfs:range rdf:resource="http://ontology.ogham.link/Person"/>
+        <rdfs:range rdf:resource="http://ontology.ogham.link/Word"/>
+        <rdfs:label xml:lang="en">shows</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/within -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.ogham.link/within">
+        <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:label xml:lang="en">st_within()</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/crmtex/TXP7_has_item -->
+
+    <owl:ObjectProperty rdf:about="http://www.cidoc-crm.org/cidoc-crm/crmtex/TXP7_has_item">
+        <rdfs:comment xml:lang="en">This property is used to state the (conceptual) belonging of a TX8 Grapheme to a given TX3 Writing System.</rdfs:comment>
+        <rdfs:label xml:lang="en">TXP7 has item</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#hasGeometry -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#hasGeometry">
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:label xml:lang="en">has geometry</rdfs:label>
+        <rdfs:label xml:lang="de">hat Geometrie</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#sameAs -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#sameAs">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label xml:lang="en">same as</rdfs:label>
+        <skos:definition xml:lang="en">The property that determines that two given individuals are equal.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">has exact match</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#actedOnBehalfOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#actedOnBehalfOf">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:range rdf:resource="https://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:label xml:lang="en">acted on behalf of</rdfs:label>
+        <skos:definition xml:lang="en">Delegation is the assignment of authority and responsibility to an agent (by itself or by another agent) to carry out a specific activity as a delegate or representative, while the agent it acts on behalf of retains some responsibility for the outcome of the delegated work.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#used -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#used">
+        <rdfs:domain rdf:resource="https://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:range rdf:resource="https://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:label xml:lang="en">used</rdfs:label>
+        <skos:definition xml:lang="en">Usage is the beginning of utilizing an entity by an activity. Before usage, the activity had not begun to utilize this entity and could not have been affected by the entity.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasAssociatedWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasAssociatedWith">
+        <rdfs:domain rdf:resource="https://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:range rdf:resource="https://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:label xml:lang="en">was associated with</rdfs:label>
+        <skos:definition xml:lang="en">An activity association is an assignment of responsibility to an agent for an activity, indicating that the agent had a role in the activity. It further allows for a plan to be specified, which is the plan intended by the agent to achieve some goals in the context of this activity.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasAttributedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasAttributedTo">
+        <rdfs:domain rdf:resource="https://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:range rdf:resource="https://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:label xml:lang="en">was attributed to</rdfs:label>
+        <skos:definition xml:lang="en">Attribution is the ascribing of an entity to an agent.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom">
+        <rdfs:domain rdf:resource="https://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:range rdf:resource="https://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:label xml:lang="en">was derived from</rdfs:label>
+        <skos:definition xml:lang="en">A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasGeneratedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasGeneratedBy">
+        <rdfs:domain rdf:resource="https://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:range rdf:resource="https://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:label xml:lang="en">was generated by</rdfs:label>
+        <skos:definition xml:lang="en">Generation is the completion of production of a new entity by an activity. This entity did not exist before generation and becomes available for usage after this generation.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasInformedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasInformedBy">
+        <rdfs:domain rdf:resource="https://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:range rdf:resource="https://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:label xml:lang="en">was informed by</rdfs:label>
+        <skos:definition xml:lang="en">Communication is the exchange of some unspecified entity by two activities, one activity using some entity generated by the other.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wikidata.org/prop/direct/P2888 -->
+
+    <owl:ObjectProperty rdf:about="http://www.wikidata.org/prop/direct/P2888">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <rdfs:domain rdf:resource="https://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:range rdf:resource="https://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:label xml:lang="en">exact match</rdfs:label>
+        <skos:definition xml:lang="en">(URLs only) used to link two items, indicating a high degree of confidence that the concepts can be used interchangeably</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontology.ogham.link/completeness -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ogham.link/completeness">
+        <rdfs:domain rdf:resource="http://ontology.ogham.link/OghamStone"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">completeness</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/context -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ogham.link/context">
+        <rdfs:domain rdf:resource="http://ontology.ogham.link/Word"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">context</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/currentlocation -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ogham.link/currentlocation">
+        <rdfs:domain rdf:resource="http://ontology.ogham.link/OghamStone"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">current location</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/currentsetting -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ogham.link/currentsetting">
+        <rdfs:domain rdf:resource="http://ontology.ogham.link/OghamStone"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">current setting</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/depth -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ogham.link/depth">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://ontology.ogham.link/OghamStone"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:label xml:lang="en">depth</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/discovery_who -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ogham.link/discovery_who">
+        <rdfs:domain rdf:resource="http://ontology.ogham.link/OghamStone"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">discovery scientist</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/discovery_year -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ogham.link/discovery_year">
+        <rdfs:domain rdf:resource="http://ontology.ogham.link/OghamStone"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">discovery year</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/form -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ogham.link/form">
+        <rdfs:domain rdf:resource="http://ontology.ogham.link/OghamStone"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="https://www.ucl.ac.uk/archaeology/cisp/database/manual/node3.html#SECTION00335000000000000000"/>
+        <rdfs:label xml:lang="en">form</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/h_status -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ogham.link/h_status">
+        <rdfs:domain rdf:resource="http://ontology.ogham.link/OghamStone"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">height status</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/height -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ogham.link/height">
+        <rdfs:domain rdf:resource="http://ontology.ogham.link/OghamStone"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:label xml:lang="en">height</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/irishGrid -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ogham.link/irishGrid">
+        <rdfs:domain rdf:resource="http://ontology.ogham.link/GeographicLocation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">irish grid reference</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/label_barony -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ogham.link/label_barony">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://ontology.ogham.link/OghamSite"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">label barony</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/label_country -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ogham.link/label_country">
+        <rdfs:domain rdf:resource="http://ontology.ogham.link/OghamSite"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">label country</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/label_county -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ogham.link/label_county">
+        <rdfs:domain rdf:resource="http://ontology.ogham.link/OghamSite"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">label county</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/label_province -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ogham.link/label_province">
+        <rdfs:domain rdf:resource="http://ontology.ogham.link/OghamSite"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">label province</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/label_townland -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ogham.link/label_townland">
+        <rdfs:domain rdf:resource="http://ontology.ogham.link/OghamSite"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">label townland</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/label_upper -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ogham.link/label_upper">
+        <rdfs:domain rdf:resource="http://ontology.ogham.link/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">label (uppercase)</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/language -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ogham.link/language">
+        <rdfs:domain rdf:resource="http://ontology.ogham.link/Reading"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">language</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/preservation -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ogham.link/preservation">
+        <rdfs:domain rdf:resource="http://ontology.ogham.link/OghamStone"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">preservation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/preservation_note -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ogham.link/preservation_note">
+        <rdfs:domain rdf:resource="http://ontology.ogham.link/OghamStone"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">preservation (note)</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/reference -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ogham.link/reference">
+        <rdfs:domain rdf:resource="http://ontology.ogham.link/Word"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">reference work</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/referenceList -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ogham.link/referenceList">
+        <rdfs:domain rdf:resource="http://ontology.ogham.link/ReferenceChain"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">example: [&apos;ogham:Y10000007&apos;, &apos;ogham:Y20000125&apos;, &apos;ogham:macalister_1945:104&apos;, &apos;ogham:cisp:COOGH/1&apos;]</rdfs:comment>
+        <rdfs:label xml:lang="en">reference list</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/scientist -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ogham.link/scientist">
+        <rdfs:domain rdf:resource="http://ontology.ogham.link/Reading"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">scientist</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/scientist_year -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ogham.link/scientist_year">
+        <rdfs:domain rdf:resource="http://ontology.ogham.link/Reading"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">scientist year</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/script -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ogham.link/script">
+        <rdfs:domain rdf:resource="http://ontology.ogham.link/Reading"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">script</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/sitecode -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ogham.link/sitecode">
+        <rdfs:domain rdf:resource="http://ontology.ogham.link/GeographicLocation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">site code</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/sitetype -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ogham.link/sitetype">
+        <rdfs:domain rdf:resource="http://ontology.ogham.link/GeographicLocation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">site type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/smr_no -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ogham.link/smr_no">
+        <rdfs:domain rdf:resource="http://ontology.ogham.link/OghamStone"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">SMR number</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/t_status -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ogham.link/t_status">
+        <rdfs:domain rdf:resource="http://ontology.ogham.link/OghamStone"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">thickness staus</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/thickness -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ogham.link/thickness">
+        <rdfs:domain rdf:resource="http://ontology.ogham.link/OghamStone"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:label xml:lang="en">thickness</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/translation -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ogham.link/translation">
+        <rdfs:domain rdf:resource="http://ontology.ogham.link/Word"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">translation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/w_status -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ogham.link/w_status">
+        <rdfs:domain rdf:resource="http://ontology.ogham.link/OghamStone"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">width status</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontology.ogham.link/width -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.ogham.link/width">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://ontology.ogham.link/OghamStone"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:label xml:lang="en">width</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#asGeoJSON -->
+
+    <owl:DatatypeProperty rdf:about="http://www.opengis.net/ont/geosparql#asGeoJSON">
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="de">als GeoJSON</rdfs:label>
+        <rdfs:label xml:lang="en">as GeoJSON</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#asWKT -->
+
+    <owl:DatatypeProperty rdf:about="http://www.opengis.net/ont/geosparql#asWKT">
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="de">als well-known-text</rdfs:label>
+        <rdfs:label xml:lang="en">as well-known-text</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#endedAtTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/prov#endedAtTime">
+        <rdfs:domain rdf:resource="https://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="en">ended at time</rdfs:label>
+        <skos:definition xml:lang="en">End is when an activity is deemed to have been ended by an entity, known as trigger. The activity no longer exists after its end. Any usage, generation, or invalidation involving an activity precedes the activity&apos;s end. An end may refer to a trigger entity that terminated the activity, or to an activity, known as ender that generated the trigger.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#startedAtTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/prov#startedAtTime">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="en">started at time</rdfs:label>
+        <skos:definition xml:lang="en">Start is when an activity is deemed to have been started by an entity, known as trigger. The activity did not exist before its start. Any usage, generation, or invalidation involving an activity follows the activity&apos;s start. A start may refer to a trigger entity that set off the activity, or to an activity, known as starter, that generated the trigger.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://academic-meta-tool.xyz/vocab#Concept -->
+
+    <owl:Class rdf:about="http://academic-meta-tool.xyz/vocab#Concept">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+        <rdfs:comment xml:lang="en">A node which is part of a triple with a vague edge.</rdfs:comment>
+        <rdfs:label xml:lang="en">Concept</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://academic-meta-tool.xyz/vocab#Role -->
+
+    <owl:Class rdf:about="http://academic-meta-tool.xyz/vocab#Role">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <rdfs:comment xml:lang="en">A vague edge which is part of a triple.</rdfs:comment>
+        <rdfs:label xml:lang="en">Role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ogham.link/AMT_Entity -->
+
+    <owl:Class rdf:about="http://ontology.ogham.link/AMT_Entity">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+        <rdfs:label xml:lang="en">Academic Meta Tool Entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ogham.link/Actor -->
+
+    <owl:Class rdf:about="http://ontology.ogham.link/Actor">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+        <rdfs:label xml:lang="en">Actor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ogham.link/ActorEntity -->
+
+    <owl:Class rdf:about="http://ontology.ogham.link/ActorEntity">
+        <rdfs:subClassOf rdf:resource="http://ontology.ogham.link/Actor"/>
+        <rdfs:label xml:lang="en">Actor Entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ogham.link/Barony -->
+
+    <owl:Class rdf:about="http://ontology.ogham.link/Barony">
+        <rdfs:subClassOf rdf:resource="http://ontology.ogham.link/County"/>
+        <rdfs:label xml:lang="en">Barony</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ogham.link/Book -->
+
+    <owl:Class rdf:about="http://ontology.ogham.link/Book">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object"/>
+        <rdfs:label xml:lang="en">Book</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ogham.link/CivilParish -->
+
+    <owl:Class rdf:about="http://ontology.ogham.link/CivilParish">
+        <rdfs:subClassOf rdf:resource="http://ontology.ogham.link/Barony"/>
+        <rdfs:label xml:lang="en">Civil Parish</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ogham.link/County -->
+
+    <owl:Class rdf:about="http://ontology.ogham.link/County">
+        <rdfs:subClassOf rdf:resource="http://ontology.ogham.link/Province"/>
+        <rdfs:label xml:lang="en">County</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ogham.link/ElectoralDevision -->
+
+    <owl:Class rdf:about="http://ontology.ogham.link/ElectoralDevision">
+        <rdfs:subClassOf rdf:resource="http://ontology.ogham.link/CivilParish"/>
+        <rdfs:label xml:lang="en">Electoral Devision</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ogham.link/FormulaWord -->
+
+    <owl:Class rdf:about="http://ontology.ogham.link/FormulaWord">
+        <rdfs:subClassOf rdf:resource="http://ontology.ogham.link/Word"/>
+        <rdfs:label xml:lang="en">Formula Word</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ogham.link/GeographicLocation -->
+
+    <owl:Class rdf:about="http://ontology.ogham.link/GeographicLocation">
+        <rdfs:subClassOf rdf:resource="http://ontology.ogham.link/Place"/>
+        <rdfs:label xml:lang="en">Geographic Location</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ogham.link/InformationCarrier -->
+
+    <owl:Class rdf:about="http://ontology.ogham.link/InformationCarrier">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object"/>
+        <rdfs:label xml:lang="en">Information Carrier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ogham.link/Inscription -->
+
+    <owl:Class rdf:about="http://ontology.ogham.link/Inscription">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/crmtex/TX1_Written_Text"/>
+        <rdfs:label xml:lang="en">Inscription</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ogham.link/Island -->
+
+    <owl:Class rdf:about="http://ontology.ogham.link/Island">
+        <rdfs:subClassOf rdf:resource="http://ontology.ogham.link/GeographicLocation"/>
+        <rdfs:label xml:lang="en">Island</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ogham.link/Material -->
+
+    <owl:Class rdf:about="http://ontology.ogham.link/Material">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:label xml:lang="en">Material</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ogham.link/NomenclatureWord -->
+
+    <owl:Class rdf:about="http://ontology.ogham.link/NomenclatureWord">
+        <rdfs:subClassOf rdf:resource="http://ontology.ogham.link/Word"/>
+        <rdfs:label xml:lang="en">Nomenclature Word</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ogham.link/OghamCollection -->
+
+    <owl:Class rdf:about="http://ontology.ogham.link/OghamCollection">
+        <rdfs:subClassOf rdf:resource="http://ontology.ogham.link/InformationCarrier"/>
+        <rdfs:label xml:lang="en">Ogham Collection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ogham.link/OghamName -->
+
+    <owl:Class rdf:about="http://ontology.ogham.link/OghamName">
+        <rdfs:subClassOf rdf:resource="http://ontology.ogham.link/Word"/>
+        <rdfs:label xml:lang="en">Ogham Name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ogham.link/OghamSite -->
+
+    <owl:Class rdf:about="http://ontology.ogham.link/OghamSite">
+        <rdfs:subClassOf rdf:resource="http://ontology.ogham.link/PlaceCollection"/>
+        <rdfs:label xml:lang="en">Ogham Site</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ogham.link/OghamStone -->
+
+    <owl:Class rdf:about="http://ontology.ogham.link/OghamStone">
+        <rdfs:subClassOf rdf:resource="http://ontology.ogham.link/OghamCollection"/>
+        <rdfs:label xml:lang="en">Ogham Stone</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ogham.link/OghamStone_CIIC -->
+
+    <owl:Class rdf:about="http://ontology.ogham.link/OghamStone_CIIC">
+        <rdfs:subClassOf rdf:resource="http://ontology.ogham.link/OghamStone"/>
+        <rdfs:label xml:lang="en">Ogham Stone Concept (RAS Macalister)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ogham.link/OghamStone_CISP -->
+
+    <owl:Class rdf:about="http://ontology.ogham.link/OghamStone_CISP">
+        <rdfs:subClassOf rdf:resource="http://ontology.ogham.link/OghamStone"/>
+        <rdfs:label xml:lang="en">Ogham Stone Concept (CISP Database)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ogham.link/OghamStone_O3D -->
+
+    <owl:Class rdf:about="http://ontology.ogham.link/OghamStone_O3D">
+        <rdfs:subClassOf rdf:resource="http://ontology.ogham.link/OghamStone"/>
+        <rdfs:label xml:lang="en">Ogham Stone Concept (Ogham in 3D Project)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ogham.link/OghamStone_Squirrel -->
+
+    <owl:Class rdf:about="http://ontology.ogham.link/OghamStone_Squirrel">
+        <rdfs:subClassOf rdf:resource="http://ontology.ogham.link/OghamStone"/>
+        <rdfs:label xml:lang="en">Ogham Stone Concept (Research Squirrel Ogham Project)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ogham.link/OghamTribe -->
+
+    <owl:Class rdf:about="http://ontology.ogham.link/OghamTribe">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Group"/>
+        <rdfs:label xml:lang="en">Ogham Tribe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ogham.link/Person -->
+
+    <owl:Class rdf:about="http://ontology.ogham.link/Person">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:label xml:lang="en">Ogham Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ogham.link/Place -->
+
+    <owl:Class rdf:about="http://ontology.ogham.link/Place">
+        <rdfs:subClassOf rdf:resource="https://pleiades.stoa.org/places/vocab#Place"/>
+        <rdfs:label xml:lang="de">Place</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ogham.link/PlaceCollection -->
+
+    <owl:Class rdf:about="http://ontology.ogham.link/PlaceCollection">
+        <rdfs:subClassOf rdf:resource="http://ontology.ogham.link/GeographicLocation"/>
+        <rdfs:label xml:lang="en">Place Collection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ogham.link/Province -->
+
+    <owl:Class rdf:about="http://ontology.ogham.link/Province">
+        <rdfs:subClassOf rdf:resource="http://ontology.ogham.link/State"/>
+        <rdfs:label xml:lang="en">Province</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ogham.link/Reading -->
+
+    <owl:Class rdf:about="http://ontology.ogham.link/Reading">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/crmtex/TX6_Transcription"/>
+        <rdfs:label xml:lang="en">Reading</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ogham.link/ReferenceChain -->
+
+    <owl:Class rdf:about="http://ontology.ogham.link/ReferenceChain">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:label xml:lang="en">Reference Chain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ogham.link/Repository -->
+
+    <owl:Class rdf:about="http://ontology.ogham.link/Repository">
+        <rdfs:subClassOf rdf:resource="http://www.ics.forth.gr/isl/CRMdig/D1_Digital_Object"/>
+        <rdfs:label xml:lang="en">Repository</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ogham.link/ResearchSoftwareEngineer -->
+
+    <owl:Class rdf:about="http://ontology.ogham.link/ResearchSoftwareEngineer">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:label xml:lang="en">Research Software Engineer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ogham.link/Sandstone -->
+
+    <owl:Class rdf:about="http://ontology.ogham.link/Sandstone">
+        <rdfs:subClassOf rdf:resource="http://ontology.ogham.link/Stone_Material"/>
+        <rdfs:label xml:lang="en">Sandstone</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ogham.link/State -->
+
+    <owl:Class rdf:about="http://ontology.ogham.link/State">
+        <rdfs:subClassOf rdf:resource="http://ontology.ogham.link/GeographicLocation"/>
+        <rdfs:label xml:lang="en">State</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ogham.link/Stone_Material -->
+
+    <owl:Class rdf:about="http://ontology.ogham.link/Stone_Material">
+        <rdfs:subClassOf rdf:resource="http://ontology.ogham.link/Material"/>
+        <rdfs:label xml:lang="en">Stone (Material)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ogham.link/Townland -->
+
+    <owl:Class rdf:about="http://ontology.ogham.link/Townland">
+        <rdfs:subClassOf rdf:resource="http://ontology.ogham.link/ElectoralDevision"/>
+        <rdfs:label xml:lang="en">Townland</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ogham.link/Word -->
+
+    <owl:Class rdf:about="http://ontology.ogham.link/Word">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:label xml:lang="en">Word</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:comment>This class comprises all things in the universe of discourse of the CIDOC Conceptual Reference Model.
+    It is an abstract concept providing for three general properties:
+    1.	Identification by name or appellation, and in particular by a preferred identifier
+    2.	Classification by type, allowing further refinement of the specific subclass an instance belongs to
+    3.	Attachment of free text for the expression of anything not captured by formal properties
+    With the exception of E59 Primitive Value, all other classes within the CRM are directly or indirectly specialisations of E1 CRM Entity.
+    </rdfs:comment>
+        <rdfs:label xml:lang="en">CRM Entity</rdfs:label>
+        <rdfs:label xml:lang="de">CRM Entität</rdfs:label>
+        <rdfs:label xml:lang="ru">CRM Сущность</rdfs:label>
+        <rdfs:label xml:lang="zh">CRM实体</rdfs:label>
+        <rdfs:label xml:lang="pt">Entidade CRM</rdfs:label>
+        <rdfs:label xml:lang="fr">Entité CRM</rdfs:label>
+        <rdfs:label xml:lang="el">Οντότητα CIDOC CRM</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Man-Made_Thing"/>
+        <rdfs:comment>This class comprises physical objects purposely created by human activity.
+      No assumptions are made as to the extent of modification required to justify regarding an object as man-made. For example, an inscribed piece of rock or a preserved butterfly are both regarded as instances of E22 Man-Made Object.
+      </rdfs:comment>
+        <rdfs:label xml:lang="de">Künstlicher Gegenstand</rdfs:label>
+        <rdfs:label xml:lang="en">Man-Made Object</rdfs:label>
+        <rdfs:label xml:lang="fr">Objet fabriqué</rdfs:label>
+        <rdfs:label xml:lang="pt">Objeto Fabricado</rdfs:label>
+        <rdfs:label xml:lang="el">Ανθρωπογενές Αντικείμενο</rdfs:label>
+        <rdfs:label xml:lang="ru">Рукотворный Объект</rdfs:label>
+        <rdfs:label xml:lang="zh">人造物件</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Man-Made_Thing -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Man-Made_Thing">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+        <rdfs:comment>This class comprises all persistent physical items that are purposely created by human activity.
+      This class comprises man-made objects, such as a swords, and man-made features, such as rock art. No assumptions are made as to the extent of modification required to justify regarding an object as man-made. For example, a “cup and ring” carving on bedrock is regarded as instance of E24 Physical Man-Made Thing.
+      </rdfs:comment>
+        <rdfs:label xml:lang="fr">Chose matérielle fabriquée</rdfs:label>
+        <rdfs:label xml:lang="pt">Coisa Material Fabricada</rdfs:label>
+        <rdfs:label xml:lang="de">Hergestelltes</rdfs:label>
+        <rdfs:label xml:lang="en">Physical Man-Made Thing</rdfs:label>
+        <rdfs:label xml:lang="el">Ανθρωπογενές Υλικό Πράγμα</rdfs:label>
+        <rdfs:label xml:lang="ru">Физическая Рукотворная Вещь</rdfs:label>
+        <rdfs:label xml:lang="zh">人造实体物</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E25_Man-Made_Feature -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E25_Man-Made_Feature">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Man-Made_Thing"/>
+        <rdfs:comment xml:lang="en">This class comprises physical features that are purposely created by human activity, such as scratches, artificial caves, artificial water channels, etc.  No assumptions are made as to the extent of modification required to justify regarding a feature as man-made. For example, rock art or even “cup and ring” carvings on bedrock a regarded as types of E25 Man-Made Feature.</rdfs:comment>
+        <rdfs:label xml:lang="en">Man-Made Feature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E39_Actor -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E39_Actor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment>This class comprises people, either individually or in groups, who have the potential to perform intentional actions of kinds for which someone may be held responsible.
+        The CRM does not attempt to model the inadvertent actions of such actors. Individual people should be documented as instances of E21 Person, whereas groups should be documented as instances of either E74 Group or its subclass E40 Legal Body.
+        </rdfs:comment>
+        <rdfs:label xml:lang="en">Actor</rdfs:label>
+        <rdfs:label xml:lang="fr">Agent</rdfs:label>
+        <rdfs:label xml:lang="pt">Agente</rdfs:label>
+        <rdfs:label xml:lang="de">Akteur</rdfs:label>
+        <rdfs:label xml:lang="el">Δράστης</rdfs:label>
+        <rdfs:label xml:lang="ru">Агент</rdfs:label>
+        <rdfs:label xml:lang="zh">角色</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E53_Place -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E53_Place">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment>This class comprises extents in space, in particular on the surface of the earth, in the pure sense of physics: independent from temporal phenomena and matter.
+        The instances of E53 Place are usually determined by reference to the position of “immobile” objects such as buildings, cities, mountains, rivers, or dedicated geodetic marks. A Place can be determined by combining a frame of reference and a location with respect to this frame. It may be identified by one or more instances of E44 Place Appellation.
+         It is sometimes argued that instances of E53 Place are best identified by global coordinates or absolute reference systems. However, relative references are often more relevant in the context of cultural documentation and tend to be more precise. In particular, we are often interested in position in relation to large, mobile objects, such as ships. For example, the Place at which Nelson died is known with reference to a large mobile object – H.M.S Victory. A resolution of this Place in terms of absolute coordinates would require knowledge of the movements of the vessel and the precise time of death, either of which may be revised, and the result would lack historical and cultural relevance.
+        Any object can serve as a frame of reference for E53 Place determination. The model foresees the notion of a &quot;section&quot; of an E19 Physical Object as a valid E53 Place determination.</rdfs:comment>
+        <rdfs:label xml:lang="fr">Lieu</rdfs:label>
+        <rdfs:label xml:lang="pt">Local</rdfs:label>
+        <rdfs:label xml:lang="de">Ort</rdfs:label>
+        <rdfs:label xml:lang="en">Place</rdfs:label>
+        <rdfs:label xml:lang="el">Τόπος</rdfs:label>
+        <rdfs:label xml:lang="ru">Место</rdfs:label>
+        <rdfs:label xml:lang="zh">地点</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E55_Type -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E55_Type">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment>This class comprises concepts denoted by terms from thesauri and controlled vocabularies used to characterize and classify instances of CRM classes. Instances of E55 Type represent concepts  in contrast to instances of E41 Appellation which are used to name instances of CRM classes.
+        E55 Type is the CRM’s interface to domain specific ontologies and thesauri. These can be represented in the CRM as subclasses of E55 Type, forming hierarchies of terms, i.e. instances of E55 Type linked via P127 has broader  term (has narrower term). Such hierarchies may be extended with additional properties.
+        </rdfs:comment>
+        <rdfs:label xml:lang="pt">Tipo</rdfs:label>
+        <rdfs:label xml:lang="en">Type</rdfs:label>
+        <rdfs:label xml:lang="fr">Type</rdfs:label>
+        <rdfs:label xml:lang="de">Typus</rdfs:label>
+        <rdfs:label xml:lang="el">Τύπος</rdfs:label>
+        <rdfs:label xml:lang="ru">Тип</rdfs:label>
+        <rdfs:label xml:lang="zh">类型</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E5_Event -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E5_Event">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/crmtex/TX1_Written_Text -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/crmtex/TX1_Written_Text">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E25_Man-Made_Feature"/>
+        <rdfs:comment xml:lang="en">This class comprises visible set of symbols (glyphs or graphs) intentionally traced (i.e. “written”) on some kind of physical support by using specific techniques and having semiotic significance and the purpose of conveying a message towards a given addressee or group of addressees.</rdfs:comment>
+        <rdfs:label xml:lang="en">TX1 Written Text</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/crmtex/TX3_Writing_System -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/crmtex/TX3_Writing_System">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:comment xml:lang="en">Subclass of E29 Design or Procedure refers to a conventional system consisting of a set of signs (graphemes, TX8) used to codify a natural language, by means of specific rules in the combination and phonological value assignment of the chosen graphemes. As each code, a writing systems requires shared understanding between writers and readers allowing the transmission of the message. It is used to produce a TX1 Written Text during a TX2 Writing event.</rdfs:comment>
+        <rdfs:label xml:lang="en">TX3 Writing System</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/crmtex/TX5_Reading -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/crmtex/TX5_Reading">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/crmtex/TX7_Written_Text_Segment"/>
+        <rdfs:comment xml:lang="en">Subclass of the S4 Observation, referring to the semiotic procedure of decoding (and therefore understanding) a written text. This procedure can be carried out for scientific purposes, in order to analyse and study the text according to different disciplinary perspectives. The reading activity, thus, is intended as a specific observation (S4) in which the decoding of the signs is performed, i.e. the linguistic value is recognised and the message is understood. Cases in which decoding does not happen (e.g., the observer is able to describe the signs but not to assign a specific linguist value to them), the S4 class could be used as it is. For study purposes, the reading procedure requires a scientific autoptic examination of the text as preparatory action for the study. An autoptic examination consists of an accurate analysis of the surface and the signs and prescribes the use of specific tools and procedures, for establishing as faithfully as possible the exact value of each sign drawn on the physical feature.</rdfs:comment>
+        <rdfs:label xml:lang="en">TX5 Reading</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/crmtex/TX6_Transcription -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/crmtex/TX6_Transcription">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/crmtex/TX5_Reading"/>
+        <rdfs:comment xml:lang="en">Subclass of E7 Activity, referring to the activity of re-writing the text conducted by an editor. This operation could involve a writing system (TX3) different from that of the original text, implying a transposition of the sounds of a language from a writing system to another one (e.g., Latin letters to render a Mycenaean text). For scientific purposes, this operation often consists in a ‘transliteration’, because it implies a 1:1 relation between the signs of the two writing systems. The P16 used specific object (was used for) property can be used to specify the role of the original graphemes during the commuting operations.</rdfs:comment>
+        <rdfs:label xml:lang="en">TX6 Transcription</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/crmtex/TX7_Written_Text_Segment -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/crmtex/TX7_Written_Text_Segment">
+        <rdfs:subClassOf rdf:resource="http://ontology.ogham.link/Inscription"/>
+        <rdfs:comment xml:lang="en">Subclass of TX1 Written Text intended to identify portions of text considered to be of particular significance by scholars, as witnesses of a certain meaning or bearers of a particular phenomenon relevant to the investigation, study and understanding of the ancient text. Examples of such text portions are: columns, fragments, sections, paragraphs, as well as single words or letters, or other components of the written text. To each of these entities can be associated a single production event (TX2) or destruction event (E6), as in the case of letters or words damaged or worn by atmospheric agents or human interventions, as well as specific conditions (E3) for documenting its status during the observation process (S4). The relationship between a written text (TX1) and its components is documented through the TXP4 has segment property.</rdfs:comment>
+        <rdfs:label xml:lang="en">TX7 Written Text Segment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/crmtex/TX8_Grapheme -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/crmtex/TX8_Grapheme">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:comment xml:lang="en">Subclass of E90 Symbolic Object used to represent the abstract units with distinctive value in a given writing system. A grapheme is a character or sequence of characters that functions as a distinct unit within an orthography. It may be a single character, a multigraph, or a diacritic, but in all cases graphemes are defined in relation to the particular orthography. Most graphemes represent a single phoneme, but some represent a sequence of phonemes. For instance, the character sequence ‹ch› is often used to represent the phoneme /tʃ/ in English, while the single letter ‹x› usually represents the phoneme sequence /ks/. In a highly phonemic writing system, there is a close correspondence between graphemes and phonemes. English (written with Latin script) is an example of a writing system that is not highly phonemic, and therefore the mappings between graphemes and phonemes are more complex. Graphemes are often written enclosed in angle brackets (‹›).</rdfs:comment>
+        <rdfs:label xml:lang="en">TX8 Grapheme</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ics.forth.gr/isl/CRMdig/D1_Digital_Object -->
+
+    <owl:Class rdf:about="http://www.ics.forth.gr/isl/CRMdig/D1_Digital_Object">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E22_Man-Made_Object"/>
+        <rdfs:comment xml:lang="en">This class comprises identifiable immaterial items that can be represented as sets of bit sequences, such as data sets, e-texts, images, audio or video items, software, etc., and are documented as single units. Any aggregation of instances of D1 Digital Object into a whole treated as single unit is also regarded as an instance of D1 Digital Object. This means that for instance, the content of a DVD, an XML file on it, and an element of this file, are regarded as distinct instances of D1 Digital Object, mutually related by the P106 is composed of (forms part of) property. A D1 Digital Object does not depend on a specific physical carrier, and it can exist on one or more carriers simultaneously.</rdfs:comment>
+        <rdfs:label xml:lang="en">Digital Object (D1)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#Feature -->
+
+    <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#Feature">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:label xml:lang="en">Feature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#Geometry -->
+
+    <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#Geometry">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:label xml:lang="en">Geometry</rdfs:label>
+        <skos:definition xml:lang="en">The class represents the top-level geometry type. This class is equivalent to the UML class GM_Object defined in ISO 19107, and it is superclass of all geometry types.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#SpatialObject -->
+
+    <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#SpatialObject">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+        <rdfs:label xml:lang="en">Spatial Object</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengis.net/ont/sf#Geometry -->
+
+    <owl:Class rdf:about="http://www.opengis.net/ont/sf#Geometry">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
+        <rdfs:comment xml:lang="en">Geometry is the root class of the hierarchy.
+The instantiable subclasses of Geometry are restricted to 0, 1 and 2-dimensional geometric objects that exist in 2, 3 or 4-dimensional coordinate space (R2, R3 or R4). Geometry values in R2 have points with coordinate values for x and y. Geometry values in R3 have points with coordinate values for x, y and z or for x, y and m. Geometry values in R4 have points with coordinate values for x, y, z and m.
+The interpretation of the coordinates is subject to the coordinate reference systems associated to the point. All coordinates within a geometry object should be in the same coordinate reference systems. Each coordinate shall be unambiguously associated to a coordinate reference system either directly or through its containing geometry. The z coordinate of a point is typically, but not necessarily, represents altitude or elevation. The m coordinate represents a measurement.
+All Geometry classes described in this specification are defined so that instances of Geometry are topologically closed, i.e. all represented geometries include their boundary as point sets. This does not affect their representation, and open version of the same classes may be used in other circumstances, such as topological representations.</rdfs:comment>
+        <rdfs:label xml:lang="en">Geometry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengis.net/ont/sf#MultiLineString -->
+
+    <owl:Class rdf:about="http://www.opengis.net/ont/sf#MultiLineString">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/sf#Geometry"/>
+        <rdfs:comment xml:lang="en">A MultiLineString is a MultiCurve whose elements are LineStrings.</rdfs:comment>
+        <rdfs:label xml:lang="en">Multi Line String</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengis.net/ont/sf#MultiPoint -->
+
+    <owl:Class rdf:about="http://www.opengis.net/ont/sf#MultiPoint">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/sf#Geometry"/>
+        <rdfs:comment xml:lang="en">A MultiPoint is a 0-dimensional GeometryCollection. The elements of a MultiPoint are restricted to Points. ThePoints are not connected or ordered in any semantically important way.
+A MultiPoint is simple if no two Points in the MultiPoint are equal (have identical coordinate values in X and Y).
+Every MultiPoint is spatially equal to a simple Multipoint.
+The boundary of a MultiPoint is the empty set.</rdfs:comment>
+        <rdfs:label xml:lang="en">Mulit Point</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengis.net/ont/sf#MultiPolygon -->
+
+    <owl:Class rdf:about="http://www.opengis.net/ont/sf#MultiPolygon">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/sf#Geometry"/>
+        <rdfs:comment xml:lang="en">A MultiPolygon is a MultiSurface whose elements are Polygons.
+The assertions for MultiPolygons are as follows.
+a) The interiors of 2 Polygons that are elements of a MultiPolygon may not intersect.
+b) The boundaries of any 2 Polygons that are elements of a MultiPolygon may not cross and may touch at only a finite number of Points.
+c) A MultiPolygon is defined as topologically closed.
+d) A MultiPolygon may not have cut lines, spikes or punctures, a MultiPolygon is a regular closed Point set,
+e) The interior of a MultiPolygon with more than 1 Polygon is not connected; the number of connected components of the interior of a MultiPolygon is equal to the number of Polygons in the MultiPolygon. 
+The boundary of a MultiPolygon is a set of closed Curves (LineStrings) corresponding to the boundaries of its element Polygons. Each Curve in the boundary of the MultiPolygon is in the boundary of exactly 1 element Polygon, and every Curve in the boundary of an element Polygon is in the boundary of the MultiPolygon.</rdfs:comment>
+        <rdfs:label xml:lang="en">Multi Polygon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengis.net/ont/sf#Point -->
+
+    <owl:Class rdf:about="http://www.opengis.net/ont/sf#Point">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/sf#Geometry"/>
+        <rdfs:comment xml:lang="en">A Point is a 0-dimensional geometric object and represents a single location in coordinate space. 
+A Point has an x-coordinate value, a y-coordinate value. If called for by the associated Spatial Reference System, it may also have coordinate values for z and m.
+The boundary of a Point is the empty set.</rdfs:comment>
+        <rdfs:label xml:lang="en">Point</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#Property -->
+
+    <owl:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">
+        <rdfs:subClassOf rdf:resource="http://ontology.ogham.link/AMT_Entity"/>
+        <rdfs:label xml:lang="en">Property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#Class -->
+
+    <owl:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
+        <rdfs:subClassOf rdf:resource="http://ontology.ogham.link/AMT_Entity"/>
+        <rdfs:label xml:lang="en">Class</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <rdfs:label xml:lang="en">Thing</rdfs:label>
+        <skos:definition xml:lang="en">The class of OWL individuals.</skos:definition>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+        <dc:description xml:lang="en">The class skos:Concept is the class of SKOS concepts.
+
+A SKOS concept can be viewed as an idea or notion; a unit of thought. However, what constitutes a unit of thought is subjective, and this definition is meant to be suggestive, rather than restrictive.
+
+The notion of a SKOS concept is useful when describing the conceptual or intellectual structure of a knowledge organization system, and when referring to specific ideas or meanings established within a KOS.</dc:description>
+        <rdfs:label xml:lang="en">Concept</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Activity -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Activity">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E5_Event"/>
+        <rdfs:label xml:lang="en">Activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Agent -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Agent">
+        <rdfs:subClassOf rdf:resource="http://ontology.ogham.link/ActorEntity"/>
+        <rdfs:label xml:lang="en">Agent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Entity -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Entity">
+        <rdfs:subClassOf rdf:resource="https://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:label xml:lang="en">Entity</rdfs:label>
+        <skos:definition xml:lang="en">An entity is a physical, digital, conceptual, or other kind of thing with some fixed aspects; entities may be real or imaginary.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Organization -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Organization">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:label xml:lang="en">Organisation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Person -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Person">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:label xml:lang="en">Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#SoftwareAgent -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#SoftwareAgent">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <rdfs:label xml:lang="en">Software Agent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q3133368 -->
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q3133368">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:label xml:lang="en">Repository</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q7725634 -->
+
+    <owl:Class rdf:about="http://www.wikidata.org/entity/Q7725634">
+        <rdfs:subClassOf rdf:resource="http://www.wikidata.org/entity/Q3133368"/>
+        <rdfs:label xml:lang="en">literary work</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Group -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Group">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <rdfs:comment xml:lang="en">The Group class represents a collection of individual agents (and may itself play the role of a Agent, ie. something that can perform actions).</rdfs:comment>
+        <rdfs:label xml:lang="en">Group</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <rdfs:label xml:lang="en">Organisation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <rdfs:comment xml:lang="en">The Person class represents people. Something is a Person if it is a person. We don&apos;t nitpic about whether they&apos;re alive, dead, real, or imaginary. The Person class is a sub-class of the Agent class, since all people are considered &apos;agents&apos; in FOAF.</rdfs:comment>
+        <rdfs:label xml:lang="en">Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Project -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Project">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E5_Event"/>
+        <rdfs:label xml:lang="en">Project</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://pleiades.stoa.org/places/vocab#Place -->
+
+    <owl:Class rdf:about="https://pleiades.stoa.org/places/vocab#Place">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <dc:description xml:lang="en">Places are instances of skos:Concept as well as contexts for Locations and Names.</dc:description>
+        <rdfs:label xml:lang="en">Pleiades Place</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3.org/2000/01/rdf-schema#Resource -->
+
+    <owl:Class rdf:about="https://www.w3.org/2000/01/rdf-schema#Resource">
+        <rdfs:label xml:lang="en">Resource</rdfs:label>
+        <skos:definition xml:lang="en">The class resource, everything.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://lod.ogham.link/data/FlorianThiery -->
+
+    <owl:NamedIndividual rdf:about="http://lod.ogham.link/data/FlorianThiery">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <owl:sameAs rdf:resource="https://orcid.org/0000-0002-3246-3531"/>
+        <prov:actedOnBehalfOf rdf:resource="http://lod.ogham.link/data/ResearchSquirrelEngineers"/>
+        <rdfs:label xml:lang="en">Florian Thiery</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://lod.ogham.link/data/PythonStonesCIIC -->
+
+    <owl:NamedIndividual rdf:about="http://lod.ogham.link/data/PythonStonesCIIC">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#SoftwareAgent"/>
+        <prov:actedOnBehalfOf rdf:resource="http://lod.ogham.link/data/FlorianThiery"/>
+        <dc:identifier>_run_py3.py</dc:identifier>
+        <dct:creator rdf:resource="http://lod.ogham.link/data/FlorianThiery"/>
+        <dct:license rdf:resource="https://github.com/FellowsFreiesWissen/Ogham/blob/main/LICENSE"/>
+        <dct:source xml:lang="en">python</dct:source>
+        <dct:type rdf:resource="http://purl.org/dc/dcmitype/Software"/>
+        <rdfs:label xml:lang="en">Python Create Script for Ogi Ogham Data</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://lod.ogham.link/data/ResearchSquirrelEngineers -->
+
+    <owl:NamedIndividual rdf:about="http://lod.ogham.link/data/ResearchSquirrelEngineers">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Group"/>
+        <rdfs:label xml:lang="en">Research Squirrel Engineers</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology.ogham.link/CISP -->
+
+    <owl:NamedIndividual rdf:about="http://ontology.ogham.link/CISP">
+        <rdf:type rdf:resource="http://ontology.ogham.link/Repository"/>
+        <rdfs:label xml:lang="en">Celtic Inscribed Stones Project (CISP)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology.ogham.link/OghamAlphabet -->
+
+    <owl:NamedIndividual rdf:about="http://ontology.ogham.link/OghamAlphabet">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/crmtex/TX3_Writing_System"/>
+        <crmtex:TXP7_has_item rdf:resource="http://ontology.ogham.link/OghamChar"/>
+        <rdfs:label xml:lang="en">Ogham Alphabet</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology.ogham.link/OghamChar -->
+
+    <owl:NamedIndividual rdf:about="http://ontology.ogham.link/OghamChar">
+        <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/crmtex/TX8_Grapheme"/>
+        <rdfs:label xml:lang="en">Ogham Char</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology.ogham.link/OghamIn3D -->
+
+    <owl:NamedIndividual rdf:about="http://ontology.ogham.link/OghamIn3D">
+        <rdf:type rdf:resource="http://ontology.ogham.link/Repository"/>
+        <rdfs:label xml:lang="en">Ogham in 3D Project</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology.ogham.link/SquirrelOgham -->
+
+    <owl:NamedIndividual rdf:about="http://ontology.ogham.link/SquirrelOgham">
+        <rdf:type rdf:resource="http://ontology.ogham.link/Repository"/>
+        <rdfs:label xml:lang="en">Ogham Squirrel Project</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology.ogham.link/brash_1879 -->
+
+    <owl:NamedIndividual rdf:about="http://ontology.ogham.link/brash_1879">
+        <rdf:type rdf:resource="http://ontology.ogham.link/Book"/>
+        <rdfs:isDefinedBy xml:lang="en">Brash, R. R. (1879) The Ogam Inscribed Monuments of the Gaedhil in the British Isles. London.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Brash (1879)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology.ogham.link/brikil_1993 -->
+
+    <owl:NamedIndividual rdf:about="http://ontology.ogham.link/brikil_1993">
+        <rdf:type rdf:resource="http://ontology.ogham.link/Book"/>
+        <rdfs:isDefinedBy xml:lang="en">Brindley, A, Kilfeather, A. (1993), An Archaeological Inventory of County Carlow, Dublin: Stationery Office.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Brindley / Kilfeather (1993)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology.ogham.link/cuppage_1986 -->
+
+    <owl:NamedIndividual rdf:about="http://ontology.ogham.link/cuppage_1986">
+        <rdf:type rdf:resource="http://ontology.ogham.link/Book"/>
+        <rdfs:isDefinedBy xml:lang="en">Cuppage, J. et al (1986) Archaeological Survey of the Dingle Peninsula. Ballyferrier: Oidrheacht Chorca Dhuibhne.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Cuppage (1986)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology.ogham.link/ferguson_1887 -->
+
+    <owl:NamedIndividual rdf:about="http://ontology.ogham.link/ferguson_1887">
+        <rdf:type rdf:resource="http://ontology.ogham.link/Book"/>
+        <rdfs:isDefinedBy xml:lang="en">Ferguson, S. (1887) Ogham Inscriptions in Ireland, Wales and Scotland: Edinburgh.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Ferguson (1887)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology.ogham.link/macalister_1897 -->
+
+    <owl:NamedIndividual rdf:about="http://ontology.ogham.link/macalister_1897">
+        <rdf:type rdf:resource="http://ontology.ogham.link/Book"/>
+        <rdfs:isDefinedBy xml:lang="en">Macalister, R. A. S. (1897) Studies in Irish Epigraphy. A Collection of Revised Readings of the Ancient Inscriptions of Ireland, with Introduction and Notes. Part I. London: David Nutt.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Macalister (1897)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology.ogham.link/macalister_1902 -->
+
+    <owl:NamedIndividual rdf:about="http://ontology.ogham.link/macalister_1902">
+        <rdf:type rdf:resource="http://ontology.ogham.link/Book"/>
+        <rdfs:isDefinedBy xml:lang="en">Macalister, R. A. S. (1902) Studies in Irish Epigraphy. A Collection of Revised Readings of the Ancient Inscriptions of Ireland, with Introduction and Notes. Part II. London: David Nutt.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Macalister (1902)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology.ogham.link/macalister_1907 -->
+
+    <owl:NamedIndividual rdf:about="http://ontology.ogham.link/macalister_1907">
+        <rdf:type rdf:resource="http://ontology.ogham.link/Book"/>
+        <rdfs:isDefinedBy xml:lang="en">Macalister, R. A. S. (1907) Studies in Irish Epigraphy. A Collection of Revised Readings of the Ancient Inscriptions of Ireland, with Introduction and Notes Part III. London: David Nutt.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Macalister (1907)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology.ogham.link/macalister_1909 -->
+
+    <owl:NamedIndividual rdf:about="http://ontology.ogham.link/macalister_1909">
+        <rdf:type rdf:resource="http://ontology.ogham.link/Book"/>
+        <rdfs:isDefinedBy xml:lang="en">Macalister, R.A.S. (1909) The Memorial Slabs of Clonmacnois, King&apos;s County. Dublin.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Macalister (1909)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology.ogham.link/macalister_1945 -->
+
+    <owl:NamedIndividual rdf:about="http://ontology.ogham.link/macalister_1945">
+        <rdf:type rdf:resource="http://ontology.ogham.link/Book"/>
+        <rdfs:isDefinedBy xml:lang="en">Macalister, R. A. S. (1945) Corpus Inscriptionum Insularum Celticarum Vol. I. Dublin: Stationery Office.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Macalister (1945)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology.ogham.link/macalister_1949 -->
+
+    <owl:NamedIndividual rdf:about="http://ontology.ogham.link/macalister_1949">
+        <rdf:type rdf:resource="http://ontology.ogham.link/Book"/>
+        <rdfs:isDefinedBy xml:lang="en">Macalister, R. A. S. (1949) Corpus Inscriptionum Insularum Celticarum Vol. II. Dublin: Stationery Office.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Macalister (1949)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology.ogham.link/mcmanus_1991 -->
+
+    <owl:NamedIndividual rdf:about="http://ontology.ogham.link/mcmanus_1991">
+        <rdf:type rdf:resource="http://ontology.ogham.link/Book"/>
+        <rdfs:isDefinedBy xml:lang="en">McManus, D. (1991) A Guide to Ogam Maynooth Monographs 4. Maynooth: An Sagart.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">McManus (1991)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology.ogham.link/okasha_forsyth_2001 -->
+
+    <owl:NamedIndividual rdf:about="http://ontology.ogham.link/okasha_forsyth_2001">
+        <rdf:type rdf:resource="http://ontology.ogham.link/Book"/>
+        <rdfs:isDefinedBy xml:lang="en">Okasha, E. and Forsyth, K. (2001) Early Christian Inscriptions of Munster. A Corpus of the Inscribed Stones. Cork: Cork University Press.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Okasha / Forsyth (2001)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology.ogham.link/osullivan_1996 -->
+
+    <owl:NamedIndividual rdf:about="http://ontology.ogham.link/osullivan_1996">
+        <rdf:type rdf:resource="http://ontology.ogham.link/Book"/>
+        <rdfs:isDefinedBy xml:lang="en">O&apos;Sullivan, A., Sheehan, J. (1996) The Iveragh Peninsula. An Archaeological Survey of South Kerry. Cork: Cork University Press.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">O&apos;Sullivan (1996)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology.ogham.link/petrie_1872 -->
+
+    <owl:NamedIndividual rdf:about="http://ontology.ogham.link/petrie_1872">
+        <rdf:type rdf:resource="http://ontology.ogham.link/Book"/>
+        <rdfs:isDefinedBy xml:lang="en">Petrie, G. (1872) Christian Inscriptions in the Irish Language, M. Stokes (ed.), Vol. 1. Dublin: Royal Historical and Archaeological Association.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Petrie (1872)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology.ogham.link/power_1992 -->
+
+    <owl:NamedIndividual rdf:about="http://ontology.ogham.link/power_1992">
+        <rdf:type rdf:resource="http://ontology.ogham.link/Book"/>
+        <rdfs:isDefinedBy xml:lang="en">Power, D, E. Byrne, U. Egan, S. Lane and M.Sleeman (1992) Archaeological Inventory of County Cork Volume 1: West Cork. Dublin: Stationery Office.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Power / Byrne / Egan / Lane / Sleeman (1992)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology.ogham.link/power_1997 -->
+
+    <owl:NamedIndividual rdf:about="http://ontology.ogham.link/power_1997">
+        <rdf:type rdf:resource="http://ontology.ogham.link/Book"/>
+        <rdfs:isDefinedBy xml:lang="en">Power, D., E. Byrne, U. Egan, S. Lane and M.Sleeman (1997) Archaeological Inventory of County Cork Volume 3: Mid Cork. Dublin: Stationery Office.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Power / Byrne / Egan / Lane / Sleeman (1997)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontology.ogham.link/raftery_1960 -->
+
+    <owl:NamedIndividual rdf:about="http://ontology.ogham.link/raftery_1960">
+        <rdf:type rdf:resource="http://ontology.ogham.link/Book"/>
+        <rdfs:isDefinedBy xml:lang="en">Raftery, B. (1960) `National Museum of Ireland, Arch. acquisitions 1958&apos; Journal of the Royal Society of Antiquaries of Ireland 90: 1--40.</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Raftery (1960)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q106628017 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q106628017">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+        <rdfs:label xml:lang="en">Celtic Inscribed Stones Project (Wikidata)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q106674066 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q106674066">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+        <rdfs:label xml:lang="en">Ogham in 3D Project (Wikidata)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.wikidata.org/entity/Q70256237 -->
+
+    <owl:NamedIndividual rdf:about="http://www.wikidata.org/entity/Q70256237">
+        <rdf:type rdf:resource="http://www.wikidata.org/entity/Q7725634"/>
+        <rdfs:label xml:lang="en">Corpus Inscriptionum Insularum Celticarum Vol.1 (Wikidata)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://orcid.org/0000-0002-3246-3531 -->
+
+    <owl:NamedIndividual rdf:about="https://orcid.org/0000-0002-3246-3531">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:label xml:lang="en">Florian Thiery (ORCID)</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

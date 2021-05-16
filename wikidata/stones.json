@@ -1,0 +1,233 @@
+{
+	"itemDocuments": [{
+		"subject": {
+			"type": "wbitemvariable",
+			"columnName": ""
+		},
+		"nameDescs": [{
+			"name_type": "",
+			"value": {
+				"type": "wbmonolingualexpr",
+				"language": {
+					"type": "wblanguageconstant",
+					"id": "en",
+					"label": "en"
+				},
+				"value": {
+					"type": "wbstringvariable",
+					"columnName": ""
+				}
+			}
+		}, {
+			"name_type": "DESCRIPTION_IF_NEW",
+			"value": {
+				"type": "wbmonolingualexpr",
+				"language": {
+					"type": "wblanguageconstant",
+					"id": "en",
+					"label": "en"
+				},
+				"value": {
+					"type": "wbstringvariable",
+					"columnName": "desc"
+				}
+			}
+		}],
+		"statementGroups": [{
+			"property": {
+				"type": "wbpropconstant",
+				"pid": "P31",
+				"label": "instance of",
+				"datatype": "wikibase-item"
+			},
+			"statements": [{
+				"value": {
+					"type": "wbitemconstant",
+					"qid": "Q2016147",
+					"label": "ogham stone"
+				},
+				"qualifiers": [],
+				"references": []
+			}, {
+				"value": {
+					"type": "wbitemconstant",
+					"qid": "Q106602575",
+					"label": "Ogham Stone Concept"
+				},
+				"qualifiers": [],
+				"references": []
+			}]
+		}, {
+			"property": {
+				"type": "wbpropconstant",
+				"pid": "P361",
+				"label": "part of",
+				"datatype": "wikibase-item"
+			},
+			"statements": [{
+				"value": {
+					"type": "wbitemconstant",
+					"qid": "Q67978809",
+					"label": "Collection of Ogham Stones"
+				},
+				"qualifiers": [],
+				"references": []
+			}, {
+				"value": {
+					"type": "wbitemconstant",
+					"qid": "Q70873595",
+					"label": "Ogi-Ogham Project"
+				},
+				"qualifiers": [],
+				"references": []
+			}, {
+				"value": {
+					"type": "wbitemconstant",
+					"qid": "Q100530634",
+					"label": "Irish ᚑᚌᚆᚐᚋ Stones into the Wikimedia Universe"
+				},
+				"qualifiers": [],
+				"references": []
+			}]
+		}, {
+			"property": {
+				"type": "wbpropconstant",
+				"pid": "P17",
+				"label": "country",
+				"datatype": "wikibase-item"
+			},
+			"statements": [{
+				"value": {
+					"type": "wbitemvariable",
+					"columnName": ""
+				},
+				"qualifiers": [],
+				"references": []
+			}]
+		}, {
+			"property": {
+				"type": "wbpropconstant",
+				"pid": "P131",
+				"label": "located in the administrative territorial entity",
+				"datatype": "wikibase-item"
+			},
+			"statements": [{
+				"value": {
+					"type": "wbitemvariable",
+					"columnName": ""
+				},
+				"qualifiers": [],
+				"references": []
+			}]
+		}, {
+			"property": {
+				"type": "wbpropconstant",
+				"pid": "P276",
+				"label": "location",
+				"datatype": "wikibase-item"
+			},
+			"statements": [{
+				"value": {
+					"type": "wbitemvariable",
+					"columnName": ""
+				},
+				"qualifiers": [],
+				"references": []
+			}]
+		}, {
+			"property": {
+				"type": "wbpropconstant",
+				"pid": "P625",
+				"label": "coordinate location",
+				"datatype": "globe-coordinate"
+			},
+			"statements": [{
+				"value": {
+					"type": "wblocationvariable",
+					"columnName": ""
+				},
+				"qualifiers": [],
+				"references": []
+			}]
+		}, {
+			"property": {
+				"type": "wbpropconstant",
+				"pid": "P195",
+				"label": "collection",
+				"datatype": "wikibase-item"
+			},
+			"statements": [{
+				"value": {
+					"type": "wbitemvariable",
+					"columnName": ""
+				},
+				"qualifiers": [],
+				"references": []
+			}]
+		}, {
+			"property": {
+				"type": "wbpropconstant",
+				"pid": "P217",
+				"label": "inventory number",
+				"datatype": "string"
+			},
+			"statements": [{
+				"value": {
+					"type": "wbstringvariable",
+					"columnName": ""
+				},
+				"qualifiers": [{
+					"prop": {
+						"type": "wbpropconstant",
+						"pid": "P195",
+						"label": "collection",
+						"datatype": "wikibase-item"
+					},
+					"value": {
+						"type": "wbitemvariable",
+						"columnName": ""
+					}
+				}],
+				"references": []
+			}]
+		}, {
+			"property": {
+				"type": "wbpropconstant",
+				"pid": "P189",
+				"label": "location of discovery",
+				"datatype": "wikibase-item"
+			},
+			"statements": [{
+				"value": {
+					"type": "wbitemvariable",
+					"columnName": ""
+				},
+				"qualifiers": [],
+				"references": []
+			}]
+		}, {
+			"property": {
+				"type": "wbpropconstant",
+				"pid": "P1684",
+				"label": "inscription",
+				"datatype": "monolingualtext"
+			},
+			"statements": [{
+				"value": {
+					"type": "wbmonolingualexpr",
+					"language": {
+						"type": "wblanguageconstant",
+						"id": "ga",
+						"label": "ga"
+					},
+					"value": {
+						"type": "wbstringvariable",
+						"columnName": ""
+					}
+				},
+				"qualifiers": [],
+				"references": []
+			}]
+		}]
+	}]
+}

@@ -1,0 +1,123 @@
+{
+	"itemDocuments": [{
+		"subject": {
+			"type": "wbitemvariable",
+			"columnName": ""
+		},
+		"nameDescs": [{
+			"name_type": "",
+			"value": {
+				"type": "wbmonolingualexpr",
+				"language": {
+					"type": "wblanguageconstant",
+					"id": "en",
+					"label": "en"
+				},
+				"value": {
+					"type": "wbstringvariable",
+					"columnName": ""
+				}
+			}
+		}, {
+			"name_type": "DESCRIPTION_IF_NEW",
+			"value": {
+				"type": "wbmonolingualexpr",
+				"language": {
+					"type": "wblanguageconstant",
+					"id": "en",
+					"label": "en"
+				},
+				"value": {
+					"type": "wbstringvariable",
+					"columnName": "desc"
+				}
+			}
+		}],
+		"statementGroups": [{
+			"property": {
+				"type": "wbpropconstant",
+				"pid": "P31",
+				"label": "instance of",
+				"datatype": "wikibase-item"
+			},
+			"statements": [{
+				"value": {
+					"type": "wbitemconstant",
+					"qid": "Q72617071",
+					"label": "Ogham Site"
+				},
+				"qualifiers": [],
+				"references": []
+			}]
+		}, {
+			"property": {
+				"type": "wbpropconstant",
+				"pid": "P361",
+				"label": "part of",
+				"datatype": "wikibase-item"
+			},
+			"statements": [{
+				"value": {
+					"type": "wbitemconstant",
+					"qid": "Q70873595",
+					"label": "Ogi-Ogham Project"
+				},
+				"qualifiers": [],
+				"references": []
+			}, {
+				"value": {
+					"type": "wbitemconstant",
+					"qid": "Q100530634",
+					"label": "Irish ᚑᚌᚆᚐᚋ Stones into the Wikimedia Universe"
+				},
+				"qualifiers": [],
+				"references": []
+			}]
+		}, {
+			"property": {
+				"type": "wbpropconstant",
+				"pid": "P17",
+				"label": "country",
+				"datatype": "wikibase-item"
+			},
+			"statements": [{
+				"value": {
+					"type": "wbitemvariable",
+					"columnName": ""
+				},
+				"qualifiers": [],
+				"references": []
+			}]
+		}, {
+			"property": {
+				"type": "wbpropconstant",
+				"pid": "P131",
+				"label": "located in the administrative territorial entity",
+				"datatype": "wikibase-item"
+			},
+			"statements": [{
+				"value": {
+					"type": "wbitemvariable",
+					"columnName": ""
+				},
+				"qualifiers": [],
+				"references": []
+			}]
+		}, {
+			"property": {
+				"type": "wbpropconstant",
+				"pid": "P625",
+				"label": "coordinate location",
+				"datatype": "globe-coordinate"
+			},
+			"statements": [{
+				"value": {
+					"type": "wblocationvariable",
+					"columnName": ""
+				},
+				"qualifiers": [],
+				"references": []
+			}]
+		}]
+	}]
+}
