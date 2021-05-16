@@ -21,6 +21,10 @@ The data is divided into
 
 The data belongs to the [`Irish ᚑᚌᚆᚐᚋ Stones in the Wikimedia Universe`](http://ogham.squirrel.link/) project. This project is funded by `Wikimedia Deutschland` and the `Open Science Fellows Program`.
 
+<center>
+<img src="https://github.com/ogi-ogham/ogham-datav1/raw/main/img/Fellowship.png" height="150">
+</center>
+
 ## Data Formats
 
 -   CSV
