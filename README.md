@@ -1,9 +1,9 @@
 # Ogham Data - v1.0
 
 <center>
-<img src="https://github.com/ogi-ogham/ogham-datav1/raw/main/img/FellowLogo.png" height="150">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="https://github.com/ogi-ogham/ogham-datav1/raw/main/img/OgiOghamLogo.png" height="150">
+<br>
+<img src="https://github.com/ogi-ogham/ogham-datav1/raw/main/img/FellowLogo.png" height="150">
 </center>
 
 ## Introduction
