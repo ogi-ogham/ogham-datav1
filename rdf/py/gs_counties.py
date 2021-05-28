@@ -85,14 +85,14 @@ for index, row in data.iterrows():
     lines.append("ogham:GSD" + str(row['id']) + "_activity " + "prov:wasAssociatedWith" + " ogham:PythonStonesCIIC .")
     lines.append("")
 
-files = (len(lines) / 100000) + 1
+files = (len(lines) / 200) + 1
 print("triples", len(lines), "files", int(files))
 thiscount = len(lines)
 _config.count(thiscount)
 
 # write output files
 f = 0
-step = 100000
+step = 200
 fileprefix = file_name + "_"
 prefixes = ""
 prefixes += "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\r\n"
