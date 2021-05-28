@@ -48,3 +48,14 @@ The data belongs to the [`Irish ᚑᚌᚆᚐᚋ Stones in the Wikimedia Universe
 -   relation=Fellow Programm Freies Wissen, Research Squirrel Engineers
 
 Related persons tagged according to [MARC Code List for Relators](https://www.loc.gov/marc/relators/relaterm.html).
+
+## Change Log
+
+### v1.1 - 28/05/2021
+
+-   fix turtle files
+-   split geospatial turtle files
+
+### v1.0 - 16/05/2021
+
+-   initial release
