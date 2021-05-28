@@ -55,8 +55,8 @@ for index, row in data.iterrows():
     lineNo += 1
     # info
     lines.append("ogham:OR" + str(row['id']) + " " + "rdf:type" + " oghamonto:Reading .")
-    lines.append("ogham:OR" + str(row['id']) + " " + "rdfs:label" + " " + "'" + str(row['label']).replace('\'', '`').replace('\\', '') + "'@en" + ".")
-    lines.append("ogham:OR" + str(row['id']) + " " + "rdfs:label" + " " + "'" + str(row['label']).replace('\'', '`').replace('\\', '') + "'@goide" + ".")
+    lines.append("ogham:OR" + str(row['id']) + " " + "rdfs:label" + " " + "'" + str(row['label']).replace('\'', '`').replace('\\', '').replace("\r\n", "") + "'@en" + ".")
+    lines.append("ogham:OR" + str(row['id']) + " " + "rdfs:label" + " " + "'" + str(row['label']).replace('\'', '`').replace('\\', '').replace("\r\n", "") + "'@goide" + ".")
     lines.append("ogham:OR" + str(row['id']) + " " + "ogham:language" + " " + "'" + str(row['language']).replace('\'', '`').replace('\\', '') + "'@en" + ".")
     lines.append("ogham:OR" + str(row['id']) + " " + "ogham:script" + " " + "'" + str(row['script']).replace('\'', '`').replace('\\', '') + "'@en" + ".")
     lines.append("ogham:OR" + str(row['id']) + " " + "ogham:scientist" + " " + "'" + str(row['scientist']).replace('\'', '`').replace('\\', '') + "'@en" + ".")

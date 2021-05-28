@@ -116,7 +116,7 @@ for index, row in data.iterrows():
             lines.append("ogham:Y" + str(row['id']) + " " + "oghamonto:preservation" + " " + "'" + str(row['preservation']) + "'" + ".")
     if str(row['preservation_note']) != 'nan':
         if str(row['preservation_note']) != 'undefined':
-            lines.append("ogham:Y" + str(row['id']) + " " + "oghamonto:preservation_note" + " " + "'" + str(row['preservation_note']).replace("'", "`") + "'" + ".")
+            lines.append("ogham:Y" + str(row['id']) + " " + "oghamonto:preservation_note" + " " + "'" + str(row['preservation_note']).replace("'", "`").replace("\r\n", "") + "'" + ".")
     if str(row['smr_no']) != 'nan':
         if str(row['smr_no']) != 'undefined':
             lines.append("ogham:Y" + str(row['id']) + " " + "oghamonto:smr_no" + " " + "'" + str(row['smr_no']) + "'" + ".")
