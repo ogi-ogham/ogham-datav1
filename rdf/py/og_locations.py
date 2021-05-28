@@ -6,7 +6,7 @@ __version__ = "beta"
 __maintainer__ = "Florian Thiery"
 __email__ = "mail@fthiery.de"
 __status__ = "beta"
-__update__ = "2021-05-11"
+__update__ = "2021-05-28"
 
 # import dependencies
 import uuid
@@ -66,14 +66,14 @@ for index, row in data.iterrows():
     # cisp
     if str(row['site']) != 'nan':
         if str(row['site']) != 'undefined':
-            lines.append("ogham:OL" + str(row['id']) + " " + "oghamonto:sitecode" + " " + "'" + str(row['sitetype']) + "'" + ".")
+            lines.append("ogham:OL" + str(row['id']) + " " + "oghamonto:sitecode" + " " + "'" + str(row['sitetype']).replace("'", "`") + "'" + ".")
     if str(row['site']) != 'nan':
         if str(row['site']) != 'undefined':
-            lines.append("ogham:OL" + str(row['id']) + " " + "oghamonto:irishGrid" + " " + "'" + str(row['grid']) + "'" + ".")
+            lines.append("ogham:OL" + str(row['id']) + " " + "oghamonto:irishGrid" + " " + "'" + str(row['grid']).replace("'", "`") + "'" + ".")
     # o3d
     if str(row['sitetype']) != 'nan':
         if str(row['sitetype']) != 'undefined':
-            lines.append("ogham:OL" + str(row['id']) + " " + "oghamonto:sitetype" + " " + "'" + str(row['sitetype']) + "'" + ".")
+            lines.append("ogham:OL" + str(row['id']) + " " + "oghamonto:sitetype" + " " + "'" + str(row['sitetype']).replace("'", "`") + "'" + ".")
     if str(row['geom_orig']) != 'nan':
         if str(row['geom_orig']) != 'undefined':
             lines.append("ogham:OL" + str(row['id']) + " " + "geosparql:hasGeometry" + " ogham:OL" + str(row['id']) + "_geom .")

@@ -6,7 +6,7 @@ __version__ = "beta"
 __maintainer__ = "Florian Thiery"
 __email__ = "mail@fthiery.de"
 __status__ = "beta"
-__update__ = "2021-05-11"
+__update__ = "2021-05-28"
 
 # import dependencies
 import uuid
@@ -57,8 +57,8 @@ for index, row in data.iterrows():
     lines.append("ogham:GSD" + str(row['id']) + " " + "rdf:type" + " oghamonto:Townland .")
     lines.append("ogham:GSD" + str(row['id']) + " " + "rdf:type" + " <http://www.opengis.net/ont/geosparql#Feature> .")
     lines.append("ogham:GSD" + str(row['id']) + " " + "rdf:type" + " <http://ontologies.geohive.ie/osi#Townland> .")
-    lines.append("ogham:GSD" + str(row['id']) + " " + "rdfs:label" + " " + "'" + str(row['label']) + "'@en" + ".")
-    lines.append("ogham:GSD" + str(row['id']) + " " + "rdfs:label" + " " + "'" + str(row['label_ga']) + "'@ga" + ".")
+    lines.append("ogham:GSD" + str(row['id']) + " " + "rdfs:label" + " " + "'" + str(row['label']).replace("'", "`") + "'@en" + ".")
+    lines.append("ogham:GSD" + str(row['id']) + " " + "rdfs:label" + " " + "'" + str(row['label_ga']).replace("'", "`") + "'@ga" + ".")
     lines.append("ogham:GSD" + str(row['id']) + " " + "oghamonto:LogainmMatch" + " <http://data.logainm.ie/place/" + str(row['logainm_id']) + "> .")
     lines.append("ogham:GSD" + str(row['id']) + " " + "oghamonto:OpenStreetMapMatch" + " '" + str(row['osm_id']) + "' .")
     lines.append("ogham:GSD" + str(row['id']) + " " + "oghamonto:TownlandsIEMatch" + " <" + str(row['tie_url']) + "> .")

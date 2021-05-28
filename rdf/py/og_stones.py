@@ -6,7 +6,7 @@ __version__ = "beta"
 __maintainer__ = "Florian Thiery"
 __email__ = "mail@fthiery.de"
 __status__ = "beta"
-__update__ = "2021-05-11"
+__update__ = "2021-05-28"
 
 # import dependencies
 import uuid
@@ -98,7 +98,7 @@ for index, row in data.iterrows():
             lines.append("ogham:Y" + str(row['id']) + " " + "oghamonto:discovery_year" + " " + "'" + str(int(row['discovery_year'])) + "'" + ".")
     if str(row['discovery_who']) != 'nan':
         if str(row['discovery_who']) != 'undefined':
-            lines.append("ogham:Y" + str(row['id']) + " " + "oghamonto:discovery_who" + " " + "'" + str(row['discovery_who']) + "'" + ".")
+            lines.append("ogham:Y" + str(row['id']) + " " + "oghamonto:discovery_who" + " " + "'" + str(row['discovery_who']).replace("'", "`") + "'" + ".")
     if str(row['currentsetting']) != 'nan':
         if str(row['currentsetting']) != 'undefined':
             lines.append("ogham:Y" + str(row['id']) + " " + "oghamonto:currentsetting" + " " + "'" + str(row['currentsetting']) + "'" + ".")
@@ -116,7 +116,7 @@ for index, row in data.iterrows():
             lines.append("ogham:Y" + str(row['id']) + " " + "oghamonto:preservation" + " " + "'" + str(row['preservation']) + "'" + ".")
     if str(row['preservation_note']) != 'nan':
         if str(row['preservation_note']) != 'undefined':
-            lines.append("ogham:Y" + str(row['id']) + " " + "oghamonto:preservation_note" + " " + "'" + str(row['preservation_note']) + "'" + ".")
+            lines.append("ogham:Y" + str(row['id']) + " " + "oghamonto:preservation_note" + " " + "'" + str(row['preservation_note']).replace("'", "`") + "'" + ".")
     if str(row['smr_no']) != 'nan':
         if str(row['smr_no']) != 'undefined':
             lines.append("ogham:Y" + str(row['id']) + " " + "oghamonto:smr_no" + " " + "'" + str(row['smr_no']) + "'" + ".")

@@ -6,7 +6,7 @@ __version__ = "beta"
 __maintainer__ = "Florian Thiery"
 __email__ = "mail@fthiery.de"
 __status__ = "beta"
-__update__ = "2021-05-11"
+__update__ = "2021-05-28"
 
 # import dependencies
 import uuid
@@ -56,7 +56,7 @@ for index, row in data.iterrows():
     # info
     lines.append("ogham:GSD" + str(row['id']) + " " + "rdf:type" + " oghamonto:Province .")
     lines.append("ogham:GSD" + str(row['id']) + " " + "rdf:type" + " <http://www.opengis.net/ont/geosparql#Feature> .")
-    lines.append("ogham:GSD" + str(row['id']) + " " + "rdfs:label" + " " + "'" + str(row['label']) + "'@en" + ".")
+    lines.append("ogham:GSD" + str(row['id']) + " " + "rdfs:label" + " " + "'" + str(row['label']).replace("'", "`") + "'@en" + ".")
     lines.append("ogham:GSD" + str(row['id']) + " " + "oghamonto:exactMatch" + " wd:" + str(row['wikidata_id']) + " .")
     # geom
     lines.append("ogham:GSD" + str(row['id']) + " " + "geosparql:hasGeometry" + " ogham:GSD" + str(row['id']) + "_geom .")

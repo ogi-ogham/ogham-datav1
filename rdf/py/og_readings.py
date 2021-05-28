@@ -6,7 +6,7 @@ __version__ = "beta"
 __maintainer__ = "Florian Thiery"
 __email__ = "mail@fthiery.de"
 __status__ = "beta"
-__update__ = "2021-05-11"
+__update__ = "2021-05-28"
 
 # import dependencies
 import uuid
@@ -60,7 +60,7 @@ for index, row in data.iterrows():
     lines.append("ogham:OR" + str(row['id']) + " " + "ogham:language" + " " + "'" + str(row['language']).replace('\'', '`').replace('\\', '') + "'@en" + ".")
     lines.append("ogham:OR" + str(row['id']) + " " + "ogham:script" + " " + "'" + str(row['script']).replace('\'', '`').replace('\\', '') + "'@en" + ".")
     lines.append("ogham:OR" + str(row['id']) + " " + "ogham:scientist" + " " + "'" + str(row['scientist']).replace('\'', '`').replace('\\', '') + "'@en" + ".")
-    lines.append("ogham:OR" + str(row['id']) + " " + "ogham:scientist_year" + " " + "" + str(row['scientist_year']) + ".")
+    lines.append("ogham:OR" + str(row['id']) + " " + "ogham:scientist_year" + " " + "'" + str(row['scientist_year']) + "' .")
     # license
     if str(row['scientist']) == "Thiery, F. & Schmidt S.C.":
         lines.append("ogham:OR" + str(row['id']) + " " + "dct:license" + " <" + "https://creativecommons.org/licenses/by/4.0/deed.de" + "> .")

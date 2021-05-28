@@ -6,7 +6,7 @@ __version__ = "beta"
 __maintainer__ = "Florian Thiery"
 __email__ = "mail@fthiery.de"
 __status__ = "beta"
-__update__ = "2021-05-11"
+__update__ = "2021-05-28"
 
 # import dependencies
 import uuid
@@ -57,7 +57,7 @@ for index, row in data.iterrows():
     lines.append("ogham:GSD" + str(row['id']) + " " + "rdf:type" + " oghamonto:Barony .")
     lines.append("ogham:GSD" + str(row['id']) + " " + "rdf:type" + " <http://www.opengis.net/ont/geosparql#Feature> .")
     lines.append("ogham:GSD" + str(row['id']) + " " + "rdf:type" + " <http://ontologies.geohive.ie/osi#Barony> .")
-    lines.append("ogham:GSD" + str(row['id']) + " " + "rdfs:label" + " " + "'" + str(row['label']) + "'@en" + ".")
+    lines.append("ogham:GSD" + str(row['id']) + " " + "rdfs:label" + " " + "'" + str(row['label']).replace("'", "`") + "'@en" + ".")
     if str(row['label_ga']) != 'nan':
         if str(row['label_ga']) != 'undefined':
             lines.append("ogham:GSD" + str(row['id']) + " " + "rdfs:label" + "'" + str(row['label_ga']) + "'@en" + ".")

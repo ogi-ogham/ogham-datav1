@@ -6,7 +6,7 @@ __version__ = "beta"
 __maintainer__ = "Florian Thiery"
 __email__ = "mail@fthiery.de"
 __status__ = "beta"
-__update__ = "2021-05-11"
+__update__ = "2021-05-28"
 
 # import dependencies
 import uuid
@@ -38,7 +38,7 @@ data = pd.read_csv(
     file_in,
     encoding='utf-8',
     sep=',',
-    usecols=['id', 'label', 'wkt', 'wikidata_id', 'townland_label', 'barony_label', 'county_label', 'province_label', 'county_label'],
+    usecols=['id', 'label', 'wkt', 'wikidata_id', 'townland_label', 'barony_label', 'county_label', 'province_label', 'country_label'],
     na_values=['.', '??', 'NULL']  # take any '.' or '??' values as NA
 )
 print(data.info())
@@ -56,13 +56,13 @@ for index, row in data.iterrows():
     # info
     lines.append("ogham:OS" + str(row['id']) + " " + "rdf:type" + " oghamonto:OghamSite .")
     lines.append("ogham:OS" + str(row['id']) + " " + "rdf:type" + " <https://pleiades.stoa.org/places/vocab#Place> .")
-    lines.append("ogham:OS" + str(row['id']) + " " + "rdfs:label" + " " + "'" + str(row['label']) + "'@en" + ".")
+    lines.append("ogham:OS" + str(row['id']) + " " + "rdfs:label" + " " + "'" + str(row['label']).replace("'", "`") + "'@en" + ".")
     lines.append("ogham:OS" + str(row['id']) + " " + "oghamonto:exactMatch" + " wd:" + str(row['wikidata_id']) + " .")
-    lines.append("ogham:OS" + str(row['id']) + " " + "oghamonto:label_townland" + " " + "'" + str(row['townland_label']) + "'" + ".")
-    lines.append("ogham:OS" + str(row['id']) + " " + "oghamonto:label_barony" + " " + "'" + str(row['barony_label']) + "'" + ".")
-    lines.append("ogham:OS" + str(row['id']) + " " + "oghamonto:label_county" + " " + "'" + str(row['county_label']) + "'" + ".")
-    lines.append("ogham:OS" + str(row['id']) + " " + "oghamonto:label_province" + " " + "'" + str(row['province_label']) + "'" + ".")
-    lines.append("ogham:OS" + str(row['id']) + " " + "oghamonto:label_county" + " " + "'" + str(row['county_label']) + "'" + ".")
+    lines.append("ogham:OS" + str(row['id']) + " " + "oghamonto:label_townland" + " " + "'" + str(row['townland_label']).replace("'", "`") + "'" + ".")
+    lines.append("ogham:OS" + str(row['id']) + " " + "oghamonto:label_barony" + " " + "'" + str(row['barony_label']).replace("'", "`") + "'" + ".")
+    lines.append("ogham:OS" + str(row['id']) + " " + "oghamonto:label_county" + " " + "'" + str(row['county_label']).replace("'", "`") + "'" + ".")
+    lines.append("ogham:OS" + str(row['id']) + " " + "oghamonto:label_province" + " " + "'" + str(row['province_label']).replace("'", "`") + "'" + ".")
+    lines.append("ogham:OS" + str(row['id']) + " " + "oghamonto:label_country" + " " + "'" + str(row['country_label']).replace("'", "`") + "'" + ".")
     # geom
     lines.append("ogham:OS" + str(row['id']) + " " + "geosparql:hasGeometry" + " ogham:OS" + str(row['id']) + "_geom .")
     lines.append("ogham:OS" + str(row['id']) + " " + "oghamonto:representativePoint" + " ogham:OS" + str(row['id']) + "_geom .")
