@@ -33,6 +33,8 @@ The data belongs to the [`Irish ᚑᚌᚆᚐᚋ Stones in the Wikimedia Universe
 
 ## Metadata
 
+The Data is published on Zenodo: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4765603.svg)](https://doi.org/10.5281/zenodo.4765603)
+
 -   title=Ogham Data Verson 1.0
 -   description= The data belongs to the Irish ᚑᚌᚆᚐᚋ Stones in the Wikimedia Universe project. This project is funded by Wikimedia Deutschland and the Open Science Fellows Program.
 -   subject=Ogham, Linked Open Data, semantic modelling
