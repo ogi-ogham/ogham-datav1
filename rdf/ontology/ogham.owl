@@ -1139,6 +1139,15 @@
     
 
 
+    <!-- http://ontology.ogham.link/OghamClusterRegion -->
+
+    <owl:Class rdf:about="http://ontology.ogham.link/OghamClusterRegion">
+        <rdfs:subClassOf rdf:resource="http://ontology.ogham.link/PlaceCollection"/>
+        <rdfs:label xml:lang="en">Ogham Cluster Region</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://ontology.ogham.link/OghamCollection -->
 
     <owl:Class rdf:about="http://ontology.ogham.link/OghamCollection">
@@ -1160,7 +1169,7 @@
     <!-- http://ontology.ogham.link/OghamSite -->
 
     <owl:Class rdf:about="http://ontology.ogham.link/OghamSite">
-        <rdfs:subClassOf rdf:resource="http://ontology.ogham.link/PlaceCollection"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.ogham.link/OghamClusterRegion"/>
         <rdfs:label xml:lang="en">Ogham Site</rdfs:label>
     </owl:Class>
     
